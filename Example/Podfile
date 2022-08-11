@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'IbadatSDK-iOS_Example' do
+  pod 'IbadatSDK-iOS', :path => '../'
+
+  target 'IbadatSDK-iOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
