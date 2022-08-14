@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'IbadatSDK-iOS'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of IbadatSDK-iOS.'
+  s.summary          = 'IbadatSDK-iOS is a framework for islamic solution.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,24 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      =  "TODO: Add long description of the pod here.  IbadatSDK-iOS is a framework for islamic solution. Dua, Surah, Salat time, Roja time, Tashbi and many more option"
 
-  s.homepage         = 'https://github.com/MD Azizur Rahman/IbadatSDK-iOS'
+  s.homepage         = 'https://github.com/gakkmediabd/IbadatSDK-iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'MD Azizur Rahman' => 'azizur.gakk@gmail.com' }
-  s.source           = { :git => 'https://github.com/MD Azizur Rahman/IbadatSDK-iOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/gakkmediabd/IbadatSDK-iOSs.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
+  s.swift_versions = '4.0'
   s.source_files = 'IbadatSDK-iOS/Classes/**/*'
   
-  # s.resource_bundles = {
+  #s.resource_bundles = {
   #   'IbadatSDK-iOS' => ['IbadatSDK-iOS/Assets/*.png']
-  # }
+  #}
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
