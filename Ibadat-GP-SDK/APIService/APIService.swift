@@ -276,7 +276,7 @@ class APIService : NSObject{
                     complete([],"",error?.localizedDescription)
                     return
                 }
-                //let str = String(data: data, encoding: .utf8)
+                _ = String(data: data, encoding: .utf8)
                 do{
                     let arr = try JSONDecoder().decode(NearByPlace.self, from: data)
                     let response = self.mapDataNormalize(allData: arr.results)
