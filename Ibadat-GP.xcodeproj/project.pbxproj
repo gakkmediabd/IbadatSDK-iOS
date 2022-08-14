@@ -13,6 +13,7 @@
 		846B9AB728968DBB0061C7A3 /* HadithVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846B9AB528968DBB0061C7A3 /* HadithVC.xib */; };
 		846B9ABB28968EF90061C7A3 /* DuaHadithDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B9AB928968EF90061C7A3 /* DuaHadithDetailsVC.swift */; };
 		846B9ABC28968EF90061C7A3 /* DuaHadithDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846B9ABA28968EF90061C7A3 /* DuaHadithDetailsVC.xib */; };
+		846E272428A8D2FE00B46F33 /* HolidayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E272328A8D2FE00B46F33 /* HolidayCell.swift */; };
 		846E9C812897CA6C00C307D0 /* SalatLearningNextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E9C7F2897CA6C00C307D0 /* SalatLearningNextVC.swift */; };
 		846E9C822897CA6C00C307D0 /* SalatLearningNextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E9C802897CA6C00C307D0 /* SalatLearningNextVC.xib */; };
 		846E9C852897CA9A00C307D0 /* SalatLearningDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E9C832897CA9A00C307D0 /* SalatLearningDetailsVC.swift */; };
@@ -50,7 +51,6 @@
 		84968D302898DEFC00F914FA /* TasbihVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D2E2898DEFC00F914FA /* TasbihVC.swift */; };
 		84968D312898DEFC00F914FA /* TasbihVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D2F2898DEFC00F914FA /* TasbihVC.xib */; };
 		84968D332898EED500F914FA /* IslamicHolidayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D322898EED500F914FA /* IslamicHolidayResponse.swift */; };
-		84968D362898F12700F914FA /* HolidayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D342898F12700F914FA /* HolidayCell.swift */; };
 		84968D372898F12700F914FA /* HolidayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D352898F12700F914FA /* HolidayCell.xib */; };
 		84968D3A2898F4C700F914FA /* HolidayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D382898F4C700F914FA /* HolidayHeader.swift */; };
 		84968D3B2898F4C700F914FA /* HolidayHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D392898F4C700F914FA /* HolidayHeader.xib */; };
@@ -213,6 +213,7 @@
 		846B9AB528968DBB0061C7A3 /* HadithVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HadithVC.xib; sourceTree = "<group>"; };
 		846B9AB928968EF90061C7A3 /* DuaHadithDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuaHadithDetailsVC.swift; sourceTree = "<group>"; };
 		846B9ABA28968EF90061C7A3 /* DuaHadithDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DuaHadithDetailsVC.xib; sourceTree = "<group>"; };
+		846E272328A8D2FE00B46F33 /* HolidayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayCell.swift; sourceTree = "<group>"; };
 		846E9C7F2897CA6C00C307D0 /* SalatLearningNextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatLearningNextVC.swift; sourceTree = "<group>"; };
 		846E9C802897CA6C00C307D0 /* SalatLearningNextVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalatLearningNextVC.xib; sourceTree = "<group>"; };
 		846E9C832897CA9A00C307D0 /* SalatLearningDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatLearningDetailsVC.swift; sourceTree = "<group>"; };
@@ -250,7 +251,6 @@
 		84968D2E2898DEFC00F914FA /* TasbihVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihVC.swift; sourceTree = "<group>"; };
 		84968D2F2898DEFC00F914FA /* TasbihVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasbihVC.xib; sourceTree = "<group>"; };
 		84968D322898EED500F914FA /* IslamicHolidayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslamicHolidayResponse.swift; sourceTree = "<group>"; };
-		84968D342898F12700F914FA /* HolidayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayCell.swift; sourceTree = "<group>"; };
 		84968D352898F12700F914FA /* HolidayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HolidayCell.xib; sourceTree = "<group>"; };
 		84968D382898F4C700F914FA /* HolidayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayHeader.swift; sourceTree = "<group>"; };
 		84968D392898F4C700F914FA /* HolidayHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HolidayHeader.xib; sourceTree = "<group>"; };
@@ -512,9 +512,9 @@
 		84968D272898DBDB00F914FA /* IslamicCalenderVC */ = {
 			isa = PBXGroup;
 			children = (
+				846E272328A8D2FE00B46F33 /* HolidayCell.swift */,
 				84968D282898DBF500F914FA /* IslamicCalenderVC.swift */,
 				84968D292898DBF500F914FA /* IslamicCalenderVC.xib */,
-				84968D342898F12700F914FA /* HolidayCell.swift */,
 				84968D352898F12700F914FA /* HolidayCell.xib */,
 				84968D382898F4C700F914FA /* HolidayHeader.swift */,
 				84968D392898F4C700F914FA /* HolidayHeader.xib */,
@@ -1103,7 +1103,6 @@
 				84E0D79F28A382CF00AC45EA /* NoInfoFoundCell.swift in Sources */,
 				84968D2A2898DBF500F914FA /* IslamicCalenderVC.swift in Sources */,
 				84968D5C289904AA00F914FA /* SolarTime.swift in Sources */,
-				84968D362898F12700F914FA /* HolidayCell.swift in Sources */,
 				84EF0D4A2897C02000FC2433 /* SalatLearningVC.swift in Sources */,
 				84EF0D412897966D00FC2433 /* SurahDetailsVC.swift in Sources */,
 				846B9AAF2896822D0061C7A3 /* URLSession++.swift in Sources */,
@@ -1143,6 +1142,7 @@
 				84968D70289915EA00F914FA /* CLLocation+Extension.swift in Sources */,
 				84BA07AC289674DC004EF6DA /* ListCell.swift in Sources */,
 				849B72AB28A0FBCA00298CCD /* FSCalendarCalculator.m in Sources */,
+				846E272428A8D2FE00B46F33 /* HolidayCell.swift in Sources */,
 				84968D5A289904AA00F914FA /* AdhanObjc.swift in Sources */,
 				84BA07B128967693004EF6DA /* Color++.swift in Sources */,
 				84EF0D4528979F0900FC2433 /* AyatCell.swift in Sources */,
