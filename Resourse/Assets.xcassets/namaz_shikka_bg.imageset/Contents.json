@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "namaz_shikka_bg.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

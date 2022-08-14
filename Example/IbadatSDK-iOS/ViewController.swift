@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import IbadatSDK_iOS
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func onButtonPressed(_ sender: Any) {
+        IbadatSdkCore.shared.openFeature(by: .TASBIH, presentController: self)
+    }
+    
 }
 
+//https://www.youtube.com/watch?v=LqPCpAZaCME
+//https://medium.com/@jeantimex/create-your-own-cocoapods-library-da589d5cd270
+//https://guides.cocoapods.org/making/using-pod-lib-create

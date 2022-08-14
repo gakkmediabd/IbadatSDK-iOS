@@ -1,5 +1,5 @@
 import XCTest
-import IbadatSDK-iOS
+//import IbadatSDK-iOS
 
 class Tests: XCTestCase {
     

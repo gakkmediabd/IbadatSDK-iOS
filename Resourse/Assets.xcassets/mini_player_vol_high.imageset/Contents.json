@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "mini_player_vol_high.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
