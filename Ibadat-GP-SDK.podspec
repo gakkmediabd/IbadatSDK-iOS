@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Ibadat-GP-SDK"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Ibadat-GP-SDK is a Islamic SDK"
 
   # This description is used to generate tags and improve search results.
@@ -105,7 +105,9 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
     spec.resource_bundles = {
-    'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.{xib,xcassets}']}
+    'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.xib}'],
+    'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.xcassets']
+    }
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
 
