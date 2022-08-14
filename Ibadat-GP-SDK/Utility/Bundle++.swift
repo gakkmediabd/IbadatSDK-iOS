@@ -8,9 +8,6 @@
 import Foundation
 
 extension Bundle{
-    static var ibadat : Bundle?{
-        return Bundle(identifier: "com.gakkMedia.Ibadat-GP-SDK")
-    }
     static var bundle : Bundle {
         #if SWIFT_PACKAGE
         return Bundle.module

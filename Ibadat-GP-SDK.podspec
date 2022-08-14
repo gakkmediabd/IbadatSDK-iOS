@@ -105,9 +105,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
     spec.resource_bundles = {
-    'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.xib'],
-    'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.xcassets']
-    }
+    'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.{xib,xcassets}']}
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
 

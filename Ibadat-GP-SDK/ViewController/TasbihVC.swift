@@ -49,7 +49,7 @@ class TasbihVC: UIViewController {
     
     
     init() {
-        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.ibadat)
+        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.bundle)
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -93,8 +93,8 @@ class TasbihVC: UIViewController {
         
         allCountLabel.text = "\(AppData.shared.ALL_COUNT)"
         
-        let select = UIImage(named: "circel_fill", in: .ibadat, compatibleWith: nil)
-        let unSelect = UIImage(named: "circel", in: .ibadat, compatibleWith: nil)
+        let select = UIImage(named: "circel_fill", in: .bundle, compatibleWith: nil)
+        let unSelect = UIImage(named: "circel", in: .bundle, compatibleWith: nil)
         btn33.setImage(unSelect, for: .normal)
         btn33.setImage(select, for: .selected)
         btn33.setTitleColor(.subTitleColot, for: .normal)

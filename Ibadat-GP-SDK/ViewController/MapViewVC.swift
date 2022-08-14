@@ -15,7 +15,7 @@ class MapViewVC: UIViewController {
     //private var locationManager : LocationManagerService = LocationManagerService()
     
     init() {
-        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.ibadat)
+        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.bundle)
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)

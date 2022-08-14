@@ -17,7 +17,7 @@ class LiveVideoVC: UIViewController {
     private var liveList : [LiveVideo]  = []
     
     init() {
-        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.ibadat)
+        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.bundle)
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)

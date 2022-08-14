@@ -9,7 +9,7 @@ import UIKit
 
 class AyatCell: UICollectionViewCell {
     static let identifier : String = "AyatCell"
-    static let nib = UINib(nibName: identifier, bundle: Bundle.ibadat)
+    static let nib = UINib(nibName: identifier, bundle: Bundle.bundle)
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     

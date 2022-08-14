@@ -26,7 +26,7 @@ class DuaHadithDetailsVC: UIViewController {
     var index : Int = 0
     
     init() {
-        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.ibadat)
+        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.bundle)
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)

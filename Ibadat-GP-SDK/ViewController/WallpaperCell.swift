@@ -9,7 +9,7 @@ import UIKit
 
 class WallpaperCell: UICollectionViewCell {
     static let identifier : String = "WallpaperCell"
-    static let nib = UINib(nibName: identifier, bundle: Bundle.ibadat)
+    static let nib = UINib(nibName: identifier, bundle: Bundle.bundle)
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var downloadLabel: UILabel!

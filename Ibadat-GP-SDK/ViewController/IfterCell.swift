@@ -15,7 +15,7 @@ struct IfterTimeModel{
 
 class IfterCell: UITableViewCell {
     static let identifier : String = "IfterCell"
-    static let nib = UINib(nibName: identifier, bundle: Bundle.ibadat)
+    static let nib = UINib(nibName: identifier, bundle: Bundle.bundle)
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var sehriLastTimeLabel: UILabel!
     @IBOutlet weak var ifterTimeLabel: UILabel!

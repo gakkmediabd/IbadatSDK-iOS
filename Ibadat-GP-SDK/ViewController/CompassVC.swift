@@ -54,7 +54,7 @@ class CompassVC: UIViewController ,CLLocationManagerDelegate{
     let kaaba = CLLocation(latitude: 21.4225, longitude: 39.8262)
     var previousAngle = CGFloat.zero
     init() {
-        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.ibadat)
+        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.bundle)
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)

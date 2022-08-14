@@ -9,7 +9,7 @@ import UIKit
 
 class TashbiContCell: UICollectionViewCell {
     static let identifier : String = "TashbiContCell"
-    static let nib = UINib(nibName: identifier, bundle: Bundle.ibadat)
+    static let nib = UINib(nibName: identifier, bundle: Bundle.bundle)
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!

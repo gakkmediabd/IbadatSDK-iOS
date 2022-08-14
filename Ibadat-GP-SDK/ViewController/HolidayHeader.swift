@@ -10,7 +10,7 @@ import UIKit
 class HolidayHeader: UICollectionReusableView {
 
     static let identifier : String = "HolidayHeader"
-    static let nib = UINib(nibName: identifier, bundle: Bundle.ibadat)
+    static let nib = UINib(nibName: identifier, bundle: Bundle.bundle)
     
     @IBOutlet weak var tittleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!

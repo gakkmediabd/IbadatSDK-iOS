@@ -33,7 +33,7 @@ class SurahDetailsVC: UIViewController {
     private var volume : Float = 0.5
     private var updater : CADisplayLink! = nil
     init() {
-        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.ibadat)
+        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.bundle)
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -73,8 +73,8 @@ class SurahDetailsVC: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        let iconPlay = UIImage(named: "icon_play", in: Bundle.ibadat, compatibleWith: nil)
-        let iconPause = UIImage(named: "icon_pause", in: Bundle.ibadat, compatibleWith: nil)
+        let iconPlay = UIImage(named: "icon_play", in: Bundle.bundle, compatibleWith: nil)
+        let iconPause = UIImage(named: "icon_pause", in: Bundle.bundle, compatibleWith: nil)
         self.btnPlayPause.setImage(iconPlay, for: .normal)
         self.btnPlayPause.setImage(iconPause, for: .selected)
         
