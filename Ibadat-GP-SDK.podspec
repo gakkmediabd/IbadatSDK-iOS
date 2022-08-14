@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Ibadat-GP-SDK"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "Ibadat-GP-SDK is a Islamic SDK"
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-    spec.source_files  = "Ibadat-GP-SDK", "Ibadat-GP-SDK/**/*.{swift,h,m}"
+    spec.source_files  = "Ibadat-GP-SDK", "Ibadat-GP-SDK/**/*.{swift,h,m,xib}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -104,11 +104,11 @@ Pod::Spec.new do |spec|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-    spec.resource_bundles = {
-    'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.{xib,xcassets}']
-    }
+  #  spec.resource_bundles = {
+  #   'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.{xib,xcassets}']
+  #  }
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  spec.resources = "Ibadat-GP-SDK/**/*.{xcassets,strings}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
