@@ -17,7 +17,7 @@ IbadatSDK-iOS is available through [CocoaPods](https://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'IbadatSDK-iOS'
+pod 'Ibadat-GP-SDK'
 ```
 
 ## Author
