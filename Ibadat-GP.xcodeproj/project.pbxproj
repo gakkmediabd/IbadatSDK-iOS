@@ -15,6 +15,8 @@
 		846B9ABC28968EF90061C7A3 /* DuaHadithDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846B9ABA28968EF90061C7A3 /* DuaHadithDetailsVC.xib */; };
 		846E272428A8D2FE00B46F33 /* HolidayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E272328A8D2FE00B46F33 /* HolidayCell.swift */; };
 		846E272628A8D40900B46F33 /* Ibadat-GP-SDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 846E272528A8D40900B46F33 /* Ibadat-GP-SDK.podspec */; };
+		846E272A28A8D67D00B46F33 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 846E272828A8D67C00B46F33 /* README.md */; };
+		846E272C28A8D73A00B46F33 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 846E272B28A8D73A00B46F33 /* LICENSE */; };
 		846E9C812897CA6C00C307D0 /* SalatLearningNextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E9C7F2897CA6C00C307D0 /* SalatLearningNextVC.swift */; };
 		846E9C822897CA6C00C307D0 /* SalatLearningNextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E9C802897CA6C00C307D0 /* SalatLearningNextVC.xib */; };
 		846E9C852897CA9A00C307D0 /* SalatLearningDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E9C832897CA9A00C307D0 /* SalatLearningDetailsVC.swift */; };
@@ -216,6 +218,8 @@
 		846B9ABA28968EF90061C7A3 /* DuaHadithDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DuaHadithDetailsVC.xib; sourceTree = "<group>"; };
 		846E272328A8D2FE00B46F33 /* HolidayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayCell.swift; sourceTree = "<group>"; };
 		846E272528A8D40900B46F33 /* Ibadat-GP-SDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Ibadat-GP-SDK.podspec"; sourceTree = "<group>"; };
+		846E272828A8D67C00B46F33 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		846E272B28A8D73A00B46F33 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		846E9C7F2897CA6C00C307D0 /* SalatLearningNextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatLearningNextVC.swift; sourceTree = "<group>"; };
 		846E9C802897CA6C00C307D0 /* SalatLearningNextVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalatLearningNextVC.xib; sourceTree = "<group>"; };
 		846E9C832897CA9A00C307D0 /* SalatLearningDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatLearningDetailsVC.swift; sourceTree = "<group>"; };
@@ -698,6 +702,8 @@
 		84C5621B2892A3FF00D0A8BF = {
 			isa = PBXGroup;
 			children = (
+				846E272B28A8D73A00B46F33 /* LICENSE */,
+				846E272828A8D67C00B46F33 /* README.md */,
 				846E272528A8D40900B46F33 /* Ibadat-GP-SDK.podspec */,
 				84C562262892A3FF00D0A8BF /* Ibadat-GP */,
 				84C562412892A43F00D0A8BF /* Ibadat-GP-SDK */,
@@ -1012,6 +1018,7 @@
 				84919E29289FBC650003AEBD /* MapViewVC.xib in Resources */,
 				84968D372898F12700F914FA /* HolidayCell.xib in Resources */,
 				84A4B36928A4C53200B1136C /* azan.mp3 in Resources */,
+				846E272A28A8D67D00B46F33 /* README.md in Resources */,
 				84E0D7A828A3B91C00AC45EA /* ZakatTopCell.xib in Resources */,
 				84968D312898DEFC00F914FA /* TasbihVC.xib in Resources */,
 				84E0D79A28A382CF00AC45EA /* SectionHeaderCell.xib in Resources */,
@@ -1039,6 +1046,7 @@
 				849B69AC289BA22700463349 /* TashbiCell.xib in Resources */,
 				84E0D78028A3824A00AC45EA /* ZakatVC.xib in Resources */,
 				84919E15289F873A0003AEBD /* LiveVideoVC.xib in Resources */,
+				846E272C28A8D73A00B46F33 /* LICENSE in Resources */,
 				84968D3B2898F4C700F914FA /* HolidayHeader.xib in Resources */,
 				84E0D7A028A382CF00AC45EA /* ZakatCalculatorOptionsCell.xib in Resources */,
 				84919E31289FC1390003AEBD /* MosqueCell.xib in Resources */,

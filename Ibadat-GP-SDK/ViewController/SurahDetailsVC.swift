@@ -166,7 +166,7 @@ class SurahDetailsVC: UIViewController {
                 updater.preferredFrameRateRange = CAFrameRateRange(minimum: 1, maximum: 1)
             } else {
                 // Fallback on earlier versions
-                updater.frameInterval = 1
+                updater.preferredFramesPerSecond = 1
             }
             updater.add(to: .main, forMode: .common)
         }else{
