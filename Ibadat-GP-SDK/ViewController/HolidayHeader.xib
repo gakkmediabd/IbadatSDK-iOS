@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="HolidayHeader" customModule="Ibadat_GP_SDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="okh-x2-Q0u">
+                    <rect key="frame" x="8" y="8" width="328" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylw-dl-gqj">
+                            <rect key="frame" x="0.0" y="0.0" width="328" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6M-gj-c7u">
+                            <rect key="frame" x="0.0" y="21.5" width="328" height="18.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="okh-x2-Q0u" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="8" id="D19-ww-055"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="okh-x2-Q0u" secondAttribute="trailing" constant="8" id="N9K-fM-dTn"/>
+                <constraint firstItem="okh-x2-Q0u" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="8" id="Z05-MR-bTD"/>
+                <constraint firstAttribute="bottom" secondItem="okh-x2-Q0u" secondAttribute="bottom" constant="8" id="dPW-Wb-odc"/>
+            </constraints>
+            <connections>
+                <outlet property="subtitleLabel" destination="O6M-gj-c7u" id="gAU-X7-JrJ"/>
+                <outlet property="tittleLabel" destination="ylw-dl-gqj" id="Wmf-17-7dd"/>
+            </connections>
+            <point key="canvasLocation" x="149.27536231884059" y="97.767857142857139"/>
+        </collectionReusableView>
+    </objects>
+</document>

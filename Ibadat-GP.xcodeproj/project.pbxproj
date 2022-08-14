@@ -7,15 +7,339 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846B9AAF2896822D0061C7A3 /* URLSession++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B9AAE2896822D0061C7A3 /* URLSession++.swift */; };
+		846B9AB328968D2C0061C7A3 /* HadithModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B9AB228968D2C0061C7A3 /* HadithModel.swift */; };
+		846B9AB628968DBB0061C7A3 /* HadithVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B9AB428968DBB0061C7A3 /* HadithVC.swift */; };
+		846B9AB728968DBB0061C7A3 /* HadithVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846B9AB528968DBB0061C7A3 /* HadithVC.xib */; };
+		846B9ABB28968EF90061C7A3 /* DuaHadithDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B9AB928968EF90061C7A3 /* DuaHadithDetailsVC.swift */; };
+		846B9ABC28968EF90061C7A3 /* DuaHadithDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846B9ABA28968EF90061C7A3 /* DuaHadithDetailsVC.xib */; };
+		846E9C812897CA6C00C307D0 /* SalatLearningNextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E9C7F2897CA6C00C307D0 /* SalatLearningNextVC.swift */; };
+		846E9C822897CA6C00C307D0 /* SalatLearningNextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E9C802897CA6C00C307D0 /* SalatLearningNextVC.xib */; };
+		846E9C852897CA9A00C307D0 /* SalatLearningDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E9C832897CA9A00C307D0 /* SalatLearningDetailsVC.swift */; };
+		846E9C862897CA9A00C307D0 /* SalatLearningDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E9C842897CA9A00C307D0 /* SalatLearningDetailsVC.xib */; };
+		846E9C8B2897D69300C307D0 /* WallpaperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E9C892897D69300C307D0 /* WallpaperVC.swift */; };
+		846E9C8C2897D69300C307D0 /* WallpaperVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E9C8A2897D69300C307D0 /* WallpaperVC.xib */; };
+		846E9C8E2897DB1600C307D0 /* WallpaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E9C8D2897DB1600C307D0 /* WallpaperModel.swift */; };
+		84830C792897DD55009205C8 /* WallpaperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84830C772897DD55009205C8 /* WallpaperCell.swift */; };
+		84830C7A2897DD55009205C8 /* WallpaperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84830C782897DD55009205C8 /* WallpaperCell.xib */; };
+		84830C7E2897E7A6009205C8 /* CompassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84830C7C2897E7A6009205C8 /* CompassVC.swift */; };
+		84830C7F2897E7A6009205C8 /* CompassVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84830C7D2897E7A6009205C8 /* CompassVC.xib */; };
+		848646DA289678680073AFE0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848646D9289678680073AFE0 /* Colors.xcassets */; };
+		848646DF28967DE20073AFE0 /* DuaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848646DD28967DE10073AFE0 /* DuaVC.swift */; };
+		848646E028967DE20073AFE0 /* DuaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848646DE28967DE10073AFE0 /* DuaVC.xib */; };
+		848646E2289680060073AFE0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848646E1289680060073AFE0 /* APIService.swift */; };
+		848646E5289680E50073AFE0 /* DuaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848646E4289680E50073AFE0 /* DuaModel.swift */; };
+		84919E0B289F7C240003AEBD /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E0A289F7C240003AEBD /* AppImage.swift */; };
+		84919E0F289F87160003AEBD /* NearestMosqueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E0D289F87160003AEBD /* NearestMosqueVC.swift */; };
+		84919E10289F87160003AEBD /* NearestMosqueVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84919E0E289F87160003AEBD /* NearestMosqueVC.xib */; };
+		84919E14289F873A0003AEBD /* LiveVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E12289F873A0003AEBD /* LiveVideoVC.swift */; };
+		84919E15289F873A0003AEBD /* LiveVideoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84919E13289F873A0003AEBD /* LiveVideoVC.xib */; };
+		84919E18289F8C420003AEBD /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E17289F8C420003AEBD /* LiveModel.swift */; };
+		84919E1B289F91350003AEBD /* LiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E19289F91350003AEBD /* LiveCell.swift */; };
+		84919E1C289F91350003AEBD /* LiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84919E1A289F91350003AEBD /* LiveCell.xib */; };
+		84919E1F289FB2CB0003AEBD /* NearByPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E1E289FB2CB0003AEBD /* NearByPlace.swift */; };
+		84919E21289FB3840003AEBD /* MosqueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E20289FB3840003AEBD /* MosqueModel.swift */; };
+		84919E24289FBC550003AEBD /* MosqueListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E22289FBC550003AEBD /* MosqueListVC.swift */; };
+		84919E25289FBC550003AEBD /* MosqueListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84919E23289FBC550003AEBD /* MosqueListVC.xib */; };
+		84919E28289FBC650003AEBD /* MapViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E26289FBC650003AEBD /* MapViewVC.swift */; };
+		84919E29289FBC650003AEBD /* MapViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84919E27289FBC650003AEBD /* MapViewVC.xib */; };
+		84919E30289FC1390003AEBD /* MosqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84919E2E289FC1380003AEBD /* MosqueCell.swift */; };
+		84919E31289FC1390003AEBD /* MosqueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84919E2F289FC1390003AEBD /* MosqueCell.xib */; };
+		84968D2A2898DBF500F914FA /* IslamicCalenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D282898DBF500F914FA /* IslamicCalenderVC.swift */; };
+		84968D2B2898DBF500F914FA /* IslamicCalenderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D292898DBF500F914FA /* IslamicCalenderVC.xib */; };
+		84968D302898DEFC00F914FA /* TasbihVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D2E2898DEFC00F914FA /* TasbihVC.swift */; };
+		84968D312898DEFC00F914FA /* TasbihVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D2F2898DEFC00F914FA /* TasbihVC.xib */; };
+		84968D332898EED500F914FA /* IslamicHolidayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D322898EED500F914FA /* IslamicHolidayResponse.swift */; };
+		84968D362898F12700F914FA /* HolidayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D342898F12700F914FA /* HolidayCell.swift */; };
+		84968D372898F12700F914FA /* HolidayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D352898F12700F914FA /* HolidayCell.xib */; };
+		84968D3A2898F4C700F914FA /* HolidayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D382898F4C700F914FA /* HolidayHeader.swift */; };
+		84968D3B2898F4C700F914FA /* HolidayHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D392898F4C700F914FA /* HolidayHeader.xib */; };
+		84968D3D2898FE1100F914FA /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D3C2898FE1100F914FA /* AppData.swift */; };
+		84968D59289904AA00F914FA /* Qibla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D3F289904AA00F914FA /* Qibla.swift */; };
+		84968D5A289904AA00F914FA /* AdhanObjc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D40289904AA00F914FA /* AdhanObjc.swift */; };
+		84968D5B289904AA00F914FA /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D41289904AA00F914FA /* PrayerTimes.swift */; };
+		84968D5C289904AA00F914FA /* SolarTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D43289904AA00F914FA /* SolarTime.swift */; };
+		84968D5D289904AA00F914FA /* SolarCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D44289904AA00F914FA /* SolarCoordinates.swift */; };
+		84968D5E289904AA00F914FA /* Astronomical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D45289904AA00F914FA /* Astronomical.swift */; };
+		84968D60289904AA00F914FA /* CalculationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D48289904AA00F914FA /* CalculationMethod.swift */; };
+		84968D61289904AA00F914FA /* Rouding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D49289904AA00F914FA /* Rouding.swift */; };
+		84968D62289904AA00F914FA /* HighLatitudeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D4A289904AA00F914FA /* HighLatitudeRule.swift */; };
+		84968D63289904AA00F914FA /* PrayerAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D4B289904AA00F914FA /* PrayerAdjustment.swift */; };
+		84968D64289904AA00F914FA /* Madhab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D4C289904AA00F914FA /* Madhab.swift */; };
+		84968D65289904AA00F914FA /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D4D289904AA00F914FA /* Prayer.swift */; };
+		84968D66289904AA00F914FA /* CalculationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D4E289904AA00F914FA /* CalculationParameters.swift */; };
+		84968D67289904AA00F914FA /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D4F289904AA00F914FA /* Coordinates.swift */; };
+		84968D68289904AA00F914FA /* Shafaq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D50289904AA00F914FA /* Shafaq.swift */; };
+		84968D69289904AA00F914FA /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D52289904AA00F914FA /* DateUtilities.swift */; };
+		84968D6A289904AA00F914FA /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D53289904AA00F914FA /* MathUtilities.swift */; };
+		84968D6B289904AA00F914FA /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D55289904AA00F914FA /* Angle.swift */; };
+		84968D6C289904AA00F914FA /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D56289904AA00F914FA /* Minute.swift */; };
+		84968D6D289904AA00F914FA /* SunnahTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D57289904AA00F914FA /* SunnahTimes.swift */; };
+		84968D70289915EA00F914FA /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D6F289915EA00F914FA /* CLLocation+Extension.swift */; };
+		84968D7428991C7A00F914FA /* SalatTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D7228991C7A00F914FA /* SalatTimeVC.swift */; };
+		84968D7528991C7A00F914FA /* SalatTimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D7328991C7A00F914FA /* SalatTimeVC.xib */; };
+		84968D78289928FF00F914FA /* SalatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D76289928FF00F914FA /* SalatCell.swift */; };
+		84968D79289928FF00F914FA /* SalatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D77289928FF00F914FA /* SalatCell.xib */; };
+		84968D7D2899329500F914FA /* ifterSehriVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84968D7B2899329500F914FA /* ifterSehriVC.swift */; };
+		84968D7E2899329500F914FA /* ifterSehriVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84968D7C2899329500F914FA /* ifterSehriVC.xib */; };
+		849B69A4289B715500463349 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B69A3289B715400463349 /* UIView++.swift */; };
+		849B69A6289B8ABD00463349 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B69A5289B8ABD00463349 /* CircularProgressView.swift */; };
+		849B69AB289BA22700463349 /* TashbiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B69A9289BA22700463349 /* TashbiCell.swift */; };
+		849B69AC289BA22700463349 /* TashbiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B69AA289BA22700463349 /* TashbiCell.xib */; };
+		849B69AF289BC00C00463349 /* TashbiContCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B69AD289BC00C00463349 /* TashbiContCell.swift */; };
+		849B69B0289BC00C00463349 /* TashbiContCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B69AE289BC00C00463349 /* TashbiContCell.xib */; };
+		849B69B2289BE98800463349 /* String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B69B1289BE98800463349 /* String++.swift */; };
+		849B729728A0FBCA00298CCD /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B727828A0FBC400298CCD /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B729828A0FBCA00298CCD /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B727928A0FBC500298CCD /* FSCalendarExtensions.m */; };
+		849B729928A0FBCA00298CCD /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B727A28A0FBC500298CCD /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B729A28A0FBCA00298CCD /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B727B28A0FBC500298CCD /* FSCalendar.m */; };
+		849B729B28A0FBCA00298CCD /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B727C28A0FBC500298CCD /* FSCalendarConstants.m */; };
+		849B729C28A0FBCA00298CCD /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B727D28A0FBC500298CCD /* FSCalendarCollectionViewLayout.m */; };
+		849B729D28A0FBCA00298CCD /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B727E28A0FBC500298CCD /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B729E28A0FBCA00298CCD /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B727F28A0FBC500298CCD /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B729F28A0FBCA00298CCD /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B728028A0FBC500298CCD /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72A028A0FBCA00298CCD /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B728128A0FBC500298CCD /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72A128A0FBCA00298CCD /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B728228A0FBC500298CCD /* FSCalendarSeparatorDecorationView.m */; };
+		849B72A228A0FBCA00298CCD /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B728328A0FBC600298CCD /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72A328A0FBCA00298CCD /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B728428A0FBC600298CCD /* FSCalendarDelegationFactory.m */; };
+		849B72A428A0FBCA00298CCD /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B728528A0FBC600298CCD /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72A528A0FBCA00298CCD /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B728628A0FBC600298CCD /* FSCalendarDelegationProxy.m */; };
+		849B72A628A0FBCA00298CCD /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B728728A0FBC700298CCD /* FSCalendarAppearance.m */; };
+		849B72A728A0FBCA00298CCD /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B728828A0FBC700298CCD /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72A828A0FBCA00298CCD /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B728928A0FBC700298CCD /* FSCalendarCell.m */; };
+		849B72A928A0FBCA00298CCD /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B728A28A0FBC700298CCD /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72AA28A0FBCA00298CCD /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B728B28A0FBC700298CCD /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72AB28A0FBCA00298CCD /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B728C28A0FBC800298CCD /* FSCalendarCalculator.m */; };
+		849B72AC28A0FBCA00298CCD /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B728D28A0FBC800298CCD /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72AD28A0FBCA00298CCD /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B728E28A0FBC800298CCD /* FSCalendarStickyHeader.m */; };
+		849B72AE28A0FBCA00298CCD /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B728F28A0FBC800298CCD /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72AF28A0FBCA00298CCD /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B729028A0FBC800298CCD /* FSCalendarWeekdayView.m */; };
+		849B72B028A0FBCA00298CCD /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B729128A0FBC900298CCD /* FSCalendarHeaderView.m */; };
+		849B72B128A0FBCA00298CCD /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B729228A0FBC900298CCD /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72B228A0FBCA00298CCD /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B729328A0FBC900298CCD /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72B328A0FBCA00298CCD /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B729428A0FBC900298CCD /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		849B72B428A0FBCA00298CCD /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B729528A0FBCA00298CCD /* FSCalendarCollectionView.m */; };
+		849B72B528A0FBCA00298CCD /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B729628A0FBCA00298CCD /* FSCalendarTransitionCoordinator.m */; };
+		849B731628A1089200298CCD /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B731428A1089200298CCD /* CalenderCell.swift */; };
+		849B731728A1089200298CCD /* CalenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B731528A1089200298CCD /* CalenderCell.xib */; };
+		849B731928A108D400298CCD /* FSCalendarLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B731828A108D400298CCD /* FSCalendarLocale.swift */; };
+		84A4B36928A4C53200B1136C /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84A4B36828A4C53200B1136C /* azan.mp3 */; };
+		84A4B36B28A4F74900B1136C /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84A4B36A28A4F74900B1136C /* azan.mp3 */; };
+		84BA079328966041004EF6DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84BA079528966041004EF6DA /* Localizable.strings */; };
+		84BA079828966088004EF6DA /* ConstantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA079728966088004EF6DA /* ConstantData.swift */; };
+		84BA079C2896627B004EF6DA /* SurahVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA079A2896627B004EF6DA /* SurahVC.swift */; };
+		84BA079D2896627B004EF6DA /* SurahVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BA079B2896627B004EF6DA /* SurahVC.xib */; };
+		84BA07A12896638A004EF6DA /* SurahModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA07A02896638A004EF6DA /* SurahModel.swift */; };
+		84BA07A7289666A1004EF6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BA07A6289666A1004EF6DA /* Assets.xcassets */; };
+		84BA07A92896705D004EF6DA /* Bundle++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA07A82896705D004EF6DA /* Bundle++.swift */; };
+		84BA07AC289674DC004EF6DA /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA07AA289674DC004EF6DA /* ListCell.swift */; };
+		84BA07AD289674DC004EF6DA /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BA07AB289674DC004EF6DA /* ListCell.xib */; };
+		84BA07B128967693004EF6DA /* Color++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA07B028967693004EF6DA /* Color++.swift */; };
+		84BF5AB6289A370200EB7742 /* LocationManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5AB5289A370200EB7742 /* LocationManagerService.swift */; };
+		84BF5AB8289A3F7300EB7742 /* UIViewController++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5AB7289A3F7300EB7742 /* UIViewController++.swift */; };
+		84BF5ABF289A55FD00EB7742 /* Date++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5ABE289A55FD00EB7742 /* Date++.swift */; };
+		84BF5AC2289A669A00EB7742 /* IfterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5AC0289A669A00EB7742 /* IfterCell.swift */; };
+		84BF5AC3289A669A00EB7742 /* IfterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BF5AC1289A669A00EB7742 /* IfterCell.xib */; };
 		84C562282892A3FF00D0A8BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C562272892A3FF00D0A8BF /* AppDelegate.swift */; };
 		84C5622A2892A3FF00D0A8BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C562292892A3FF00D0A8BF /* SceneDelegate.swift */; };
 		84C5622C2892A3FF00D0A8BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5622B2892A3FF00D0A8BF /* ViewController.swift */; };
 		84C5622F2892A3FF00D0A8BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5622D2892A3FF00D0A8BF /* Main.storyboard */; };
 		84C562312892A40400D0A8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C562302892A40400D0A8BF /* Assets.xcassets */; };
 		84C562342892A40400D0A8BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C562322892A40400D0A8BF /* LaunchScreen.storyboard */; };
+		84C562432892A43F00D0A8BF /* Ibadat_GP_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C562422892A43F00D0A8BF /* Ibadat_GP_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84C562462892A43F00D0A8BF /* Ibadat_GP_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C562402892A43F00D0A8BF /* Ibadat_GP_SDK.framework */; };
+		84C562472892A43F00D0A8BF /* Ibadat_GP_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84C562402892A43F00D0A8BF /* Ibadat_GP_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84C5624D2892A7DC00D0A8BF /* Ibatad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5624C2892A7DC00D0A8BF /* Ibatad.swift */; };
+		84C5624F2892A84600D0A8BF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5624E2892A84600D0A8BF /* Enums.swift */; };
+		84C562562892AAB500D0A8BF /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C562552892AAB500D0A8BF /* URLConstant.swift */; };
+		84E0D77F28A3824A00AC45EA /* ZakatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D77D28A3824A00AC45EA /* ZakatVC.swift */; };
+		84E0D78028A3824A00AC45EA /* ZakatVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D77E28A3824A00AC45EA /* ZakatVC.xib */; };
+		84E0D78428A3826800AC45EA /* ZakatCalculationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D78228A3826800AC45EA /* ZakatCalculationVC.swift */; };
+		84E0D78528A3826800AC45EA /* ZakatCalculationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D78328A3826800AC45EA /* ZakatCalculationVC.xib */; };
+		84E0D79428A382CE00AC45EA /* ZakatCalculatorOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D78628A382CD00AC45EA /* ZakatCalculatorOptionsCell.swift */; };
+		84E0D79628A382CE00AC45EA /* ZakatInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D78828A382CD00AC45EA /* ZakatInputCell.xib */; };
+		84E0D79728A382CE00AC45EA /* SectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D78928A382CD00AC45EA /* SectionHeaderCell.swift */; };
+		84E0D79828A382CE00AC45EA /* ZakatSavedCalculationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D78A28A382CD00AC45EA /* ZakatSavedCalculationCell.swift */; };
+		84E0D79928A382CE00AC45EA /* ZakatInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D78B28A382CE00AC45EA /* ZakatInputCell.swift */; };
+		84E0D79A28A382CF00AC45EA /* SectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D78C28A382CE00AC45EA /* SectionHeaderCell.xib */; };
+		84E0D79B28A382CF00AC45EA /* ZakatSavedCalculationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D78D28A382CE00AC45EA /* ZakatSavedCalculationCell.xib */; };
+		84E0D79C28A382CF00AC45EA /* NewCalculationHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D78E28A382CE00AC45EA /* NewCalculationHeaderCell.swift */; };
+		84E0D79D28A382CF00AC45EA /* NewCalculationHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D78F28A382CE00AC45EA /* NewCalculationHeaderCell.xib */; };
+		84E0D79E28A382CF00AC45EA /* NoInfoFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D79028A382CE00AC45EA /* NoInfoFoundCell.xib */; };
+		84E0D79F28A382CF00AC45EA /* NoInfoFoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D79128A382CE00AC45EA /* NoInfoFoundCell.swift */; };
+		84E0D7A028A382CF00AC45EA /* ZakatCalculatorOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D79228A382CE00AC45EA /* ZakatCalculatorOptionsCell.xib */; };
+		84E0D7A428A3B72A00AC45EA /* ZakatResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D7A328A3B72A00AC45EA /* ZakatResponse.swift */; };
+		84E0D7A728A3B91C00AC45EA /* ZakatTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D7A528A3B91C00AC45EA /* ZakatTopCell.swift */; };
+		84E0D7A828A3B91C00AC45EA /* ZakatTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D7A628A3B91C00AC45EA /* ZakatTopCell.xib */; };
+		84E0D7AE28A3CB0C00AC45EA /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D7AD28A3CB0C00AC45EA /* AlarmManager.swift */; };
+		84EF0D3D2897952B00FC2433 /* SurhaDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0D3C2897952B00FC2433 /* SurhaDetailsModel.swift */; };
+		84EF0D412897966D00FC2433 /* SurahDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0D3F2897966D00FC2433 /* SurahDetailsVC.swift */; };
+		84EF0D422897966D00FC2433 /* SurahDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EF0D402897966D00FC2433 /* SurahDetailsVC.xib */; };
+		84EF0D4528979F0900FC2433 /* AyatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0D4328979F0900FC2433 /* AyatCell.swift */; };
+		84EF0D4628979F0900FC2433 /* AyatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EF0D4428979F0900FC2433 /* AyatCell.xib */; };
+		84EF0D4A2897C02000FC2433 /* SalatLearningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0D482897C02000FC2433 /* SalatLearningVC.swift */; };
+		84EF0D4B2897C02000FC2433 /* SalatLearningVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EF0D492897C02000FC2433 /* SalatLearningVC.xib */; };
+		84EF0D4E2897C0A700FC2433 /* SalatLearningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0D4D2897C0A700FC2433 /* SalatLearningModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		84C562442892A43F00D0A8BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5621C2892A3FF00D0A8BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C5623F2892A43F00D0A8BF;
+			remoteInfo = "Ibadat-GP-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84C5624B2892A43F00D0A8BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84C562472892A43F00D0A8BF /* Ibadat_GP_SDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		846B9AAE2896822D0061C7A3 /* URLSession++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession++.swift"; sourceTree = "<group>"; };
+		846B9AB228968D2C0061C7A3 /* HadithModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithModel.swift; sourceTree = "<group>"; };
+		846B9AB428968DBB0061C7A3 /* HadithVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithVC.swift; sourceTree = "<group>"; };
+		846B9AB528968DBB0061C7A3 /* HadithVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HadithVC.xib; sourceTree = "<group>"; };
+		846B9AB928968EF90061C7A3 /* DuaHadithDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuaHadithDetailsVC.swift; sourceTree = "<group>"; };
+		846B9ABA28968EF90061C7A3 /* DuaHadithDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DuaHadithDetailsVC.xib; sourceTree = "<group>"; };
+		846E9C7F2897CA6C00C307D0 /* SalatLearningNextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatLearningNextVC.swift; sourceTree = "<group>"; };
+		846E9C802897CA6C00C307D0 /* SalatLearningNextVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalatLearningNextVC.xib; sourceTree = "<group>"; };
+		846E9C832897CA9A00C307D0 /* SalatLearningDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatLearningDetailsVC.swift; sourceTree = "<group>"; };
+		846E9C842897CA9A00C307D0 /* SalatLearningDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalatLearningDetailsVC.xib; sourceTree = "<group>"; };
+		846E9C892897D69300C307D0 /* WallpaperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperVC.swift; sourceTree = "<group>"; };
+		846E9C8A2897D69300C307D0 /* WallpaperVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WallpaperVC.xib; sourceTree = "<group>"; };
+		846E9C8D2897DB1600C307D0 /* WallpaperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperModel.swift; sourceTree = "<group>"; };
+		84830C772897DD55009205C8 /* WallpaperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCell.swift; sourceTree = "<group>"; };
+		84830C782897DD55009205C8 /* WallpaperCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WallpaperCell.xib; sourceTree = "<group>"; };
+		84830C7C2897E7A6009205C8 /* CompassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassVC.swift; sourceTree = "<group>"; };
+		84830C7D2897E7A6009205C8 /* CompassVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompassVC.xib; sourceTree = "<group>"; };
+		848646D9289678680073AFE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		848646DD28967DE10073AFE0 /* DuaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuaVC.swift; sourceTree = "<group>"; };
+		848646DE28967DE10073AFE0 /* DuaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DuaVC.xib; sourceTree = "<group>"; };
+		848646E1289680060073AFE0 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		848646E4289680E50073AFE0 /* DuaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuaModel.swift; sourceTree = "<group>"; };
+		84919E0A289F7C240003AEBD /* AppImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		84919E0D289F87160003AEBD /* NearestMosqueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestMosqueVC.swift; sourceTree = "<group>"; };
+		84919E0E289F87160003AEBD /* NearestMosqueVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearestMosqueVC.xib; sourceTree = "<group>"; };
+		84919E12289F873A0003AEBD /* LiveVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoVC.swift; sourceTree = "<group>"; };
+		84919E13289F873A0003AEBD /* LiveVideoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveVideoVC.xib; sourceTree = "<group>"; };
+		84919E17289F8C420003AEBD /* LiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
+		84919E19289F91350003AEBD /* LiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCell.swift; sourceTree = "<group>"; };
+		84919E1A289F91350003AEBD /* LiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveCell.xib; sourceTree = "<group>"; };
+		84919E1E289FB2CB0003AEBD /* NearByPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByPlace.swift; sourceTree = "<group>"; };
+		84919E20289FB3840003AEBD /* MosqueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosqueModel.swift; sourceTree = "<group>"; };
+		84919E22289FBC550003AEBD /* MosqueListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosqueListVC.swift; sourceTree = "<group>"; };
+		84919E23289FBC550003AEBD /* MosqueListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MosqueListVC.xib; sourceTree = "<group>"; };
+		84919E26289FBC650003AEBD /* MapViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewVC.swift; sourceTree = "<group>"; };
+		84919E27289FBC650003AEBD /* MapViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewVC.xib; sourceTree = "<group>"; };
+		84919E2E289FC1380003AEBD /* MosqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosqueCell.swift; sourceTree = "<group>"; };
+		84919E2F289FC1390003AEBD /* MosqueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MosqueCell.xib; sourceTree = "<group>"; };
+		84968D282898DBF500F914FA /* IslamicCalenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslamicCalenderVC.swift; sourceTree = "<group>"; };
+		84968D292898DBF500F914FA /* IslamicCalenderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IslamicCalenderVC.xib; sourceTree = "<group>"; };
+		84968D2E2898DEFC00F914FA /* TasbihVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihVC.swift; sourceTree = "<group>"; };
+		84968D2F2898DEFC00F914FA /* TasbihVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasbihVC.xib; sourceTree = "<group>"; };
+		84968D322898EED500F914FA /* IslamicHolidayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslamicHolidayResponse.swift; sourceTree = "<group>"; };
+		84968D342898F12700F914FA /* HolidayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayCell.swift; sourceTree = "<group>"; };
+		84968D352898F12700F914FA /* HolidayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HolidayCell.xib; sourceTree = "<group>"; };
+		84968D382898F4C700F914FA /* HolidayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayHeader.swift; sourceTree = "<group>"; };
+		84968D392898F4C700F914FA /* HolidayHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HolidayHeader.xib; sourceTree = "<group>"; };
+		84968D3C2898FE1100F914FA /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		84968D3F289904AA00F914FA /* Qibla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Qibla.swift; sourceTree = "<group>"; };
+		84968D40289904AA00F914FA /* AdhanObjc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdhanObjc.swift; sourceTree = "<group>"; };
+		84968D41289904AA00F914FA /* PrayerTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
+		84968D43289904AA00F914FA /* SolarTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarTime.swift; sourceTree = "<group>"; };
+		84968D44289904AA00F914FA /* SolarCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarCoordinates.swift; sourceTree = "<group>"; };
+		84968D45289904AA00F914FA /* Astronomical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Astronomical.swift; sourceTree = "<group>"; };
+		84968D48289904AA00F914FA /* CalculationMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationMethod.swift; sourceTree = "<group>"; };
+		84968D49289904AA00F914FA /* Rouding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rouding.swift; sourceTree = "<group>"; };
+		84968D4A289904AA00F914FA /* HighLatitudeRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighLatitudeRule.swift; sourceTree = "<group>"; };
+		84968D4B289904AA00F914FA /* PrayerAdjustment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerAdjustment.swift; sourceTree = "<group>"; };
+		84968D4C289904AA00F914FA /* Madhab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Madhab.swift; sourceTree = "<group>"; };
+		84968D4D289904AA00F914FA /* Prayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
+		84968D4E289904AA00F914FA /* CalculationParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationParameters.swift; sourceTree = "<group>"; };
+		84968D4F289904AA00F914FA /* Coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		84968D50289904AA00F914FA /* Shafaq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shafaq.swift; sourceTree = "<group>"; };
+		84968D52289904AA00F914FA /* DateUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
+		84968D53289904AA00F914FA /* MathUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUtilities.swift; sourceTree = "<group>"; };
+		84968D55289904AA00F914FA /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		84968D56289904AA00F914FA /* Minute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minute.swift; sourceTree = "<group>"; };
+		84968D57289904AA00F914FA /* SunnahTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunnahTimes.swift; sourceTree = "<group>"; };
+		84968D6F289915EA00F914FA /* CLLocation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+		84968D7228991C7A00F914FA /* SalatTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatTimeVC.swift; sourceTree = "<group>"; };
+		84968D7328991C7A00F914FA /* SalatTimeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalatTimeVC.xib; sourceTree = "<group>"; };
+		84968D76289928FF00F914FA /* SalatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatCell.swift; sourceTree = "<group>"; };
+		84968D77289928FF00F914FA /* SalatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalatCell.xib; sourceTree = "<group>"; };
+		84968D7B2899329500F914FA /* ifterSehriVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ifterSehriVC.swift; sourceTree = "<group>"; };
+		84968D7C2899329500F914FA /* ifterSehriVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ifterSehriVC.xib; sourceTree = "<group>"; };
+		849B69A3289B715400463349 /* UIView++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
+		849B69A5289B8ABD00463349 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		849B69A9289BA22700463349 /* TashbiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TashbiCell.swift; sourceTree = "<group>"; };
+		849B69AA289BA22700463349 /* TashbiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TashbiCell.xib; sourceTree = "<group>"; };
+		849B69AD289BC00C00463349 /* TashbiContCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TashbiContCell.swift; sourceTree = "<group>"; };
+		849B69AE289BC00C00463349 /* TashbiContCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TashbiContCell.xib; sourceTree = "<group>"; };
+		849B69B1289BE98800463349 /* String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++.swift"; sourceTree = "<group>"; };
+		849B727828A0FBC400298CCD /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		849B727928A0FBC500298CCD /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		849B727A28A0FBC500298CCD /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		849B727B28A0FBC500298CCD /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		849B727C28A0FBC500298CCD /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		849B727D28A0FBC500298CCD /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		849B727E28A0FBC500298CCD /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		849B727F28A0FBC500298CCD /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		849B728028A0FBC500298CCD /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		849B728128A0FBC500298CCD /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		849B728228A0FBC500298CCD /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		849B728328A0FBC600298CCD /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		849B728428A0FBC600298CCD /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		849B728528A0FBC600298CCD /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		849B728628A0FBC600298CCD /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		849B728728A0FBC700298CCD /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		849B728828A0FBC700298CCD /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		849B728928A0FBC700298CCD /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		849B728A28A0FBC700298CCD /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		849B728B28A0FBC700298CCD /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		849B728C28A0FBC800298CCD /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		849B728D28A0FBC800298CCD /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		849B728E28A0FBC800298CCD /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		849B728F28A0FBC800298CCD /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		849B729028A0FBC800298CCD /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		849B729128A0FBC900298CCD /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		849B729228A0FBC900298CCD /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		849B729328A0FBC900298CCD /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		849B729428A0FBC900298CCD /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		849B729528A0FBCA00298CCD /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		849B729628A0FBCA00298CCD /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		849B731428A1089200298CCD /* CalenderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
+		849B731528A1089200298CCD /* CalenderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalenderCell.xib; sourceTree = "<group>"; };
+		849B731828A108D400298CCD /* FSCalendarLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendarLocale.swift; sourceTree = "<group>"; };
+		84A4B36828A4C53200B1136C /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
+		84A4B36A28A4F74900B1136C /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
+		84BA079428966041004EF6DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84BA079728966088004EF6DA /* ConstantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantData.swift; sourceTree = "<group>"; };
+		84BA079A2896627B004EF6DA /* SurahVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahVC.swift; sourceTree = "<group>"; };
+		84BA079B2896627B004EF6DA /* SurahVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurahVC.xib; sourceTree = "<group>"; };
+		84BA07A02896638A004EF6DA /* SurahModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahModel.swift; sourceTree = "<group>"; };
+		84BA07A6289666A1004EF6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84BA07A82896705D004EF6DA /* Bundle++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle++.swift"; sourceTree = "<group>"; };
+		84BA07AA289674DC004EF6DA /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		84BA07AB289674DC004EF6DA /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		84BA07B028967693004EF6DA /* Color++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color++.swift"; sourceTree = "<group>"; };
+		84BF5AB5289A370200EB7742 /* LocationManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerService.swift; sourceTree = "<group>"; };
+		84BF5AB7289A3F7300EB7742 /* UIViewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController++.swift"; sourceTree = "<group>"; };
+		84BF5ABE289A55FD00EB7742 /* Date++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date++.swift"; sourceTree = "<group>"; };
+		84BF5AC0289A669A00EB7742 /* IfterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfterCell.swift; sourceTree = "<group>"; };
+		84BF5AC1289A669A00EB7742 /* IfterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IfterCell.xib; sourceTree = "<group>"; };
 		84C562242892A3FF00D0A8BF /* Ibadat-GP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ibadat-GP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C562272892A3FF00D0A8BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C562292892A3FF00D0A8BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,10 +348,52 @@
 		84C562302892A40400D0A8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C562332892A40400D0A8BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C562352892A40400D0A8BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C562402892A43F00D0A8BF /* Ibadat_GP_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ibadat_GP_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C562422892A43F00D0A8BF /* Ibadat_GP_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ibadat_GP_SDK.h; sourceTree = "<group>"; };
+		84C5624C2892A7DC00D0A8BF /* Ibatad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ibatad.swift; sourceTree = "<group>"; };
+		84C5624E2892A84600D0A8BF /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		84C562552892AAB500D0A8BF /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		84E0D77D28A3824A00AC45EA /* ZakatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakatVC.swift; sourceTree = "<group>"; };
+		84E0D77E28A3824A00AC45EA /* ZakatVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZakatVC.xib; sourceTree = "<group>"; };
+		84E0D78228A3826800AC45EA /* ZakatCalculationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakatCalculationVC.swift; sourceTree = "<group>"; };
+		84E0D78328A3826800AC45EA /* ZakatCalculationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZakatCalculationVC.xib; sourceTree = "<group>"; };
+		84E0D78628A382CD00AC45EA /* ZakatCalculatorOptionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZakatCalculatorOptionsCell.swift; sourceTree = "<group>"; };
+		84E0D78828A382CD00AC45EA /* ZakatInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZakatInputCell.xib; sourceTree = "<group>"; };
+		84E0D78928A382CD00AC45EA /* SectionHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderCell.swift; sourceTree = "<group>"; };
+		84E0D78A28A382CD00AC45EA /* ZakatSavedCalculationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZakatSavedCalculationCell.swift; sourceTree = "<group>"; };
+		84E0D78B28A382CE00AC45EA /* ZakatInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZakatInputCell.swift; sourceTree = "<group>"; };
+		84E0D78C28A382CE00AC45EA /* SectionHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeaderCell.xib; sourceTree = "<group>"; };
+		84E0D78D28A382CE00AC45EA /* ZakatSavedCalculationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZakatSavedCalculationCell.xib; sourceTree = "<group>"; };
+		84E0D78E28A382CE00AC45EA /* NewCalculationHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCalculationHeaderCell.swift; sourceTree = "<group>"; };
+		84E0D78F28A382CE00AC45EA /* NewCalculationHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCalculationHeaderCell.xib; sourceTree = "<group>"; };
+		84E0D79028A382CE00AC45EA /* NoInfoFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoInfoFoundCell.xib; sourceTree = "<group>"; };
+		84E0D79128A382CE00AC45EA /* NoInfoFoundCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInfoFoundCell.swift; sourceTree = "<group>"; };
+		84E0D79228A382CE00AC45EA /* ZakatCalculatorOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZakatCalculatorOptionsCell.xib; sourceTree = "<group>"; };
+		84E0D7A328A3B72A00AC45EA /* ZakatResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakatResponse.swift; sourceTree = "<group>"; };
+		84E0D7A528A3B91C00AC45EA /* ZakatTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakatTopCell.swift; sourceTree = "<group>"; };
+		84E0D7A628A3B91C00AC45EA /* ZakatTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZakatTopCell.xib; sourceTree = "<group>"; };
+		84E0D7AD28A3CB0C00AC45EA /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+		84EF0D3B2897870100FC2433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84EF0D3C2897952B00FC2433 /* SurhaDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurhaDetailsModel.swift; sourceTree = "<group>"; };
+		84EF0D3F2897966D00FC2433 /* SurahDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahDetailsVC.swift; sourceTree = "<group>"; };
+		84EF0D402897966D00FC2433 /* SurahDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurahDetailsVC.xib; sourceTree = "<group>"; };
+		84EF0D4328979F0900FC2433 /* AyatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyatCell.swift; sourceTree = "<group>"; };
+		84EF0D4428979F0900FC2433 /* AyatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AyatCell.xib; sourceTree = "<group>"; };
+		84EF0D482897C02000FC2433 /* SalatLearningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatLearningVC.swift; sourceTree = "<group>"; };
+		84EF0D492897C02000FC2433 /* SalatLearningVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalatLearningVC.xib; sourceTree = "<group>"; };
+		84EF0D4D2897C0A700FC2433 /* SalatLearningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatLearningModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		84C562212892A3FF00D0A8BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C562462892A43F00D0A8BF /* Ibadat_GP_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C5623D2892A43F00D0A8BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,10 +403,301 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846B9AB028968A7C0061C7A3 /* HadithVC */ = {
+			isa = PBXGroup;
+			children = (
+				846B9AB428968DBB0061C7A3 /* HadithVC.swift */,
+				846B9AB528968DBB0061C7A3 /* HadithVC.xib */,
+			);
+			name = HadithVC;
+			sourceTree = "<group>";
+		};
+		846B9AB128968D170061C7A3 /* Hadith */ = {
+			isa = PBXGroup;
+			children = (
+				846B9AB228968D2C0061C7A3 /* HadithModel.swift */,
+			);
+			path = Hadith;
+			sourceTree = "<group>";
+		};
+		846B9AB828968ED90061C7A3 /* DuaHadithDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				846B9AB928968EF90061C7A3 /* DuaHadithDetailsVC.swift */,
+				846B9ABA28968EF90061C7A3 /* DuaHadithDetailsVC.xib */,
+			);
+			name = DuaHadithDetailsVC;
+			sourceTree = "<group>";
+		};
+		846E9C872897D66D00C307D0 /* WallpaperVC */ = {
+			isa = PBXGroup;
+			children = (
+				846E9C892897D69300C307D0 /* WallpaperVC.swift */,
+				846E9C8A2897D69300C307D0 /* WallpaperVC.xib */,
+				84830C772897DD55009205C8 /* WallpaperCell.swift */,
+				84830C782897DD55009205C8 /* WallpaperCell.xib */,
+			);
+			name = WallpaperVC;
+			sourceTree = "<group>";
+		};
+		84830C7B2897E780009205C8 /* CompassVC */ = {
+			isa = PBXGroup;
+			children = (
+				84830C7C2897E7A6009205C8 /* CompassVC.swift */,
+				84830C7D2897E7A6009205C8 /* CompassVC.xib */,
+			);
+			name = CompassVC;
+			sourceTree = "<group>";
+		};
+		848646DC28967DC80073AFE0 /* DuaVC */ = {
+			isa = PBXGroup;
+			children = (
+				848646DD28967DE10073AFE0 /* DuaVC.swift */,
+				848646DE28967DE10073AFE0 /* DuaVC.xib */,
+			);
+			name = DuaVC;
+			sourceTree = "<group>";
+		};
+		848646E3289680D90073AFE0 /* Dua */ = {
+			isa = PBXGroup;
+			children = (
+				848646E4289680E50073AFE0 /* DuaModel.swift */,
+			);
+			path = Dua;
+			sourceTree = "<group>";
+		};
+		84919E0C289F86F40003AEBD /* NearestMosqueVC */ = {
+			isa = PBXGroup;
+			children = (
+				84919E0D289F87160003AEBD /* NearestMosqueVC.swift */,
+				84919E0E289F87160003AEBD /* NearestMosqueVC.xib */,
+				84919E22289FBC550003AEBD /* MosqueListVC.swift */,
+				84919E23289FBC550003AEBD /* MosqueListVC.xib */,
+				84919E26289FBC650003AEBD /* MapViewVC.swift */,
+				84919E27289FBC650003AEBD /* MapViewVC.xib */,
+				84919E2E289FC1380003AEBD /* MosqueCell.swift */,
+				84919E2F289FC1390003AEBD /* MosqueCell.xib */,
+			);
+			name = NearestMosqueVC;
+			sourceTree = "<group>";
+		};
+		84919E11289F871A0003AEBD /* LiveVideoVC */ = {
+			isa = PBXGroup;
+			children = (
+				84919E12289F873A0003AEBD /* LiveVideoVC.swift */,
+				84919E13289F873A0003AEBD /* LiveVideoVC.xib */,
+				84919E19289F91350003AEBD /* LiveCell.swift */,
+				84919E1A289F91350003AEBD /* LiveCell.xib */,
+			);
+			name = LiveVideoVC;
+			sourceTree = "<group>";
+		};
+		84919E16289F8C330003AEBD /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				84919E17289F8C420003AEBD /* LiveModel.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		84919E1D289FB2AE0003AEBD /* NearByPlace */ = {
+			isa = PBXGroup;
+			children = (
+				84919E1E289FB2CB0003AEBD /* NearByPlace.swift */,
+				84919E20289FB3840003AEBD /* MosqueModel.swift */,
+			);
+			path = NearByPlace;
+			sourceTree = "<group>";
+		};
+		84968D272898DBDB00F914FA /* IslamicCalenderVC */ = {
+			isa = PBXGroup;
+			children = (
+				84968D282898DBF500F914FA /* IslamicCalenderVC.swift */,
+				84968D292898DBF500F914FA /* IslamicCalenderVC.xib */,
+				84968D342898F12700F914FA /* HolidayCell.swift */,
+				84968D352898F12700F914FA /* HolidayCell.xib */,
+				84968D382898F4C700F914FA /* HolidayHeader.swift */,
+				84968D392898F4C700F914FA /* HolidayHeader.xib */,
+				849B731428A1089200298CCD /* CalenderCell.swift */,
+				849B731528A1089200298CCD /* CalenderCell.xib */,
+				849B731828A108D400298CCD /* FSCalendarLocale.swift */,
+			);
+			name = IslamicCalenderVC;
+			sourceTree = "<group>";
+		};
+		84968D2D2898DEE500F914FA /* TasbihVC */ = {
+			isa = PBXGroup;
+			children = (
+				84968D2E2898DEFC00F914FA /* TasbihVC.swift */,
+				84968D2F2898DEFC00F914FA /* TasbihVC.xib */,
+				849B69A9289BA22700463349 /* TashbiCell.swift */,
+				849B69AA289BA22700463349 /* TashbiCell.xib */,
+				849B69AD289BC00C00463349 /* TashbiContCell.swift */,
+				849B69AE289BC00C00463349 /* TashbiContCell.xib */,
+			);
+			name = TasbihVC;
+			sourceTree = "<group>";
+		};
+		84968D3E289904AA00F914FA /* Adhan */ = {
+			isa = PBXGroup;
+			children = (
+				84968D3F289904AA00F914FA /* Qibla.swift */,
+				84968D40289904AA00F914FA /* AdhanObjc.swift */,
+				84968D41289904AA00F914FA /* PrayerTimes.swift */,
+				84968D42289904AA00F914FA /* Astronomy */,
+				84968D47289904AA00F914FA /* Models */,
+				84968D51289904AA00F914FA /* Extensions */,
+				84968D54289904AA00F914FA /* Units */,
+				84968D57289904AA00F914FA /* SunnahTimes.swift */,
+			);
+			path = Adhan;
+			sourceTree = "<group>";
+		};
+		84968D42289904AA00F914FA /* Astronomy */ = {
+			isa = PBXGroup;
+			children = (
+				84968D43289904AA00F914FA /* SolarTime.swift */,
+				84968D44289904AA00F914FA /* SolarCoordinates.swift */,
+				84968D45289904AA00F914FA /* Astronomical.swift */,
+			);
+			path = Astronomy;
+			sourceTree = "<group>";
+		};
+		84968D47289904AA00F914FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84968D48289904AA00F914FA /* CalculationMethod.swift */,
+				84968D49289904AA00F914FA /* Rouding.swift */,
+				84968D4A289904AA00F914FA /* HighLatitudeRule.swift */,
+				84968D4B289904AA00F914FA /* PrayerAdjustment.swift */,
+				84968D4C289904AA00F914FA /* Madhab.swift */,
+				84968D4D289904AA00F914FA /* Prayer.swift */,
+				84968D4E289904AA00F914FA /* CalculationParameters.swift */,
+				84968D4F289904AA00F914FA /* Coordinates.swift */,
+				84968D50289904AA00F914FA /* Shafaq.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84968D51289904AA00F914FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84968D52289904AA00F914FA /* DateUtilities.swift */,
+				84968D53289904AA00F914FA /* MathUtilities.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84968D54289904AA00F914FA /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				84968D55289904AA00F914FA /* Angle.swift */,
+				84968D56289904AA00F914FA /* Minute.swift */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		84968D7128991C5F00F914FA /* SalatTimeVC */ = {
+			isa = PBXGroup;
+			children = (
+				84968D7228991C7A00F914FA /* SalatTimeVC.swift */,
+				84968D7328991C7A00F914FA /* SalatTimeVC.xib */,
+				84968D76289928FF00F914FA /* SalatCell.swift */,
+				84968D77289928FF00F914FA /* SalatCell.xib */,
+			);
+			name = SalatTimeVC;
+			sourceTree = "<group>";
+		};
+		84968D7A2899325A00F914FA /* IfterSeheriVC */ = {
+			isa = PBXGroup;
+			children = (
+				84968D7B2899329500F914FA /* ifterSehriVC.swift */,
+				84968D7C2899329500F914FA /* ifterSehriVC.xib */,
+				84BF5AC0289A669A00EB7742 /* IfterCell.swift */,
+				84BF5AC1289A669A00EB7742 /* IfterCell.xib */,
+			);
+			name = IfterSeheriVC;
+			sourceTree = "<group>";
+		};
+		849B727128A0FB4A00298CCD /* FSCalender */ = {
+			isa = PBXGroup;
+			children = (
+				849B728F28A0FBC800298CCD /* FSCalendar.h */,
+				849B727B28A0FBC500298CCD /* FSCalendar.m */,
+				849B728828A0FBC700298CCD /* FSCalendarAppearance.h */,
+				849B728728A0FBC700298CCD /* FSCalendarAppearance.m */,
+				849B728528A0FBC600298CCD /* FSCalendarCalculator.h */,
+				849B728C28A0FBC800298CCD /* FSCalendarCalculator.m */,
+				849B728328A0FBC600298CCD /* FSCalendarCell.h */,
+				849B728928A0FBC700298CCD /* FSCalendarCell.m */,
+				849B728A28A0FBC700298CCD /* FSCalendarCollectionView.h */,
+				849B729528A0FBCA00298CCD /* FSCalendarCollectionView.m */,
+				849B729328A0FBC900298CCD /* FSCalendarCollectionViewLayout.h */,
+				849B727D28A0FBC500298CCD /* FSCalendarCollectionViewLayout.m */,
+				849B729228A0FBC900298CCD /* FSCalendarConstants.h */,
+				849B727C28A0FBC500298CCD /* FSCalendarConstants.m */,
+				849B729428A0FBC900298CCD /* FSCalendarDelegationFactory.h */,
+				849B728428A0FBC600298CCD /* FSCalendarDelegationFactory.m */,
+				849B728B28A0FBC700298CCD /* FSCalendarDelegationProxy.h */,
+				849B728628A0FBC600298CCD /* FSCalendarDelegationProxy.m */,
+				849B727828A0FBC400298CCD /* FSCalendarDynamicHeader.h */,
+				849B728D28A0FBC800298CCD /* FSCalendarExtensions.h */,
+				849B727928A0FBC500298CCD /* FSCalendarExtensions.m */,
+				849B727E28A0FBC500298CCD /* FSCalendarHeaderView.h */,
+				849B729128A0FBC900298CCD /* FSCalendarHeaderView.m */,
+				849B727A28A0FBC500298CCD /* FSCalendarSeparatorDecorationView.h */,
+				849B728228A0FBC500298CCD /* FSCalendarSeparatorDecorationView.m */,
+				849B728028A0FBC500298CCD /* FSCalendarStickyHeader.h */,
+				849B728E28A0FBC800298CCD /* FSCalendarStickyHeader.m */,
+				849B728128A0FBC500298CCD /* FSCalendarTransitionCoordinator.h */,
+				849B729628A0FBCA00298CCD /* FSCalendarTransitionCoordinator.m */,
+				849B727F28A0FBC500298CCD /* FSCalendarWeekdayView.h */,
+				849B729028A0FBC800298CCD /* FSCalendarWeekdayView.m */,
+			);
+			path = FSCalender;
+			sourceTree = "<group>";
+		};
+		84BA07962896606D004EF6DA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				84C5624C2892A7DC00D0A8BF /* Ibatad.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		84BA07992896625D004EF6DA /* SurahVC */ = {
+			isa = PBXGroup;
+			children = (
+				84BA079A2896627B004EF6DA /* SurahVC.swift */,
+				84BA079B2896627B004EF6DA /* SurahVC.xib */,
+				84BA07AA289674DC004EF6DA /* ListCell.swift */,
+				84BA07AB289674DC004EF6DA /* ListCell.xib */,
+			);
+			name = SurahVC;
+			sourceTree = "<group>";
+		};
+		84BA079F2896637A004EF6DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84E0D7A228A3B6CE00AC45EA /* Zakat */,
+				84919E1D289FB2AE0003AEBD /* NearByPlace */,
+				84919E16289F8C330003AEBD /* Live */,
+				84EF0D4C2897C08700FC2433 /* Salat */,
+				846B9AB128968D170061C7A3 /* Hadith */,
+				848646E3289680D90073AFE0 /* Dua */,
+				84BA07A02896638A004EF6DA /* SurahModel.swift */,
+				84EF0D3C2897952B00FC2433 /* SurhaDetailsModel.swift */,
+				846E9C8D2897DB1600C307D0 /* WallpaperModel.swift */,
+				84968D322898EED500F914FA /* IslamicHolidayResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		84C5621B2892A3FF00D0A8BF = {
 			isa = PBXGroup;
 			children = (
 				84C562262892A3FF00D0A8BF /* Ibadat-GP */,
+				84C562412892A43F00D0A8BF /* Ibadat-GP-SDK */,
 				84C562252892A3FF00D0A8BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +706,7 @@
 			isa = PBXGroup;
 			children = (
 				84C562242892A3FF00D0A8BF /* Ibadat-GP.app */,
+				84C562402892A43F00D0A8BF /* Ibadat_GP_SDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +714,7 @@
 		84C562262892A3FF00D0A8BF /* Ibadat-GP */ = {
 			isa = PBXGroup;
 			children = (
+				84A4B36A28A4F74900B1136C /* azan.mp3 */,
 				84C562272892A3FF00D0A8BF /* AppDelegate.swift */,
 				84C562292892A3FF00D0A8BF /* SceneDelegate.swift */,
 				84C5622B2892A3FF00D0A8BF /* ViewController.swift */,
@@ -67,7 +726,188 @@
 			path = "Ibadat-GP";
 			sourceTree = "<group>";
 		};
+		84C562412892A43F00D0A8BF /* Ibadat-GP-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0D3B2897870100FC2433 /* Info.plist */,
+				849B727128A0FB4A00298CCD /* FSCalender */,
+				84EF0D382897869500FC2433 /* Resourse */,
+				84BA07962896606D004EF6DA /* Core */,
+				84BA079F2896637A004EF6DA /* Model */,
+				84C562542892AA9700D0A8BF /* APIService */,
+				84C562532892AA8B00D0A8BF /* Utility */,
+				84C562522892AA8100D0A8BF /* ViewController */,
+				84C562422892A43F00D0A8BF /* Ibadat_GP_SDK.h */,
+				84BA079528966041004EF6DA /* Localizable.strings */,
+			);
+			path = "Ibadat-GP-SDK";
+			sourceTree = "<group>";
+		};
+		84C562522892AA8100D0A8BF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84E0D77C28A3822F00AC45EA /* ZakatVC */,
+				84919E11289F871A0003AEBD /* LiveVideoVC */,
+				84919E0C289F86F40003AEBD /* NearestMosqueVC */,
+				84968D7A2899325A00F914FA /* IfterSeheriVC */,
+				84968D7128991C5F00F914FA /* SalatTimeVC */,
+				84968D2D2898DEE500F914FA /* TasbihVC */,
+				84968D272898DBDB00F914FA /* IslamicCalenderVC */,
+				84830C7B2897E780009205C8 /* CompassVC */,
+				846E9C872897D66D00C307D0 /* WallpaperVC */,
+				84EF0D472897BFFD00FC2433 /* SalatLearningVC */,
+				84EF0D3E2897965200FC2433 /* SurahDetailsVC */,
+				846B9AB828968ED90061C7A3 /* DuaHadithDetailsVC */,
+				846B9AB028968A7C0061C7A3 /* HadithVC */,
+				848646DC28967DC80073AFE0 /* DuaVC */,
+				84BA07992896625D004EF6DA /* SurahVC */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84C562532892AA8B00D0A8BF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				84919E0A289F7C240003AEBD /* AppImage.swift */,
+				84C5624E2892A84600D0A8BF /* Enums.swift */,
+				849B69A3289B715400463349 /* UIView++.swift */,
+				84968D6F289915EA00F914FA /* CLLocation+Extension.swift */,
+				84968D3E289904AA00F914FA /* Adhan */,
+				84BA079728966088004EF6DA /* ConstantData.swift */,
+				84BA07A82896705D004EF6DA /* Bundle++.swift */,
+				84BA07B028967693004EF6DA /* Color++.swift */,
+				846B9AAE2896822D0061C7A3 /* URLSession++.swift */,
+				84968D3C2898FE1100F914FA /* AppData.swift */,
+				84BF5AB5289A370200EB7742 /* LocationManagerService.swift */,
+				84BF5AB7289A3F7300EB7742 /* UIViewController++.swift */,
+				84BF5ABE289A55FD00EB7742 /* Date++.swift */,
+				849B69A5289B8ABD00463349 /* CircularProgressView.swift */,
+				849B69B1289BE98800463349 /* String++.swift */,
+				84E0D7AD28A3CB0C00AC45EA /* AlarmManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		84C562542892AA9700D0A8BF /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				84C562552892AAB500D0A8BF /* URLConstant.swift */,
+				848646E1289680060073AFE0 /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		84E0D77C28A3822F00AC45EA /* ZakatVC */ = {
+			isa = PBXGroup;
+			children = (
+				84E0D78128A3824F00AC45EA /* cell */,
+				84E0D77D28A3824A00AC45EA /* ZakatVC.swift */,
+				84E0D77E28A3824A00AC45EA /* ZakatVC.xib */,
+				84E0D78228A3826800AC45EA /* ZakatCalculationVC.swift */,
+				84E0D78328A3826800AC45EA /* ZakatCalculationVC.xib */,
+			);
+			name = ZakatVC;
+			sourceTree = "<group>";
+		};
+		84E0D78128A3824F00AC45EA /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				84E0D7A528A3B91C00AC45EA /* ZakatTopCell.swift */,
+				84E0D7A628A3B91C00AC45EA /* ZakatTopCell.xib */,
+				84E0D78E28A382CE00AC45EA /* NewCalculationHeaderCell.swift */,
+				84E0D78F28A382CE00AC45EA /* NewCalculationHeaderCell.xib */,
+				84E0D79128A382CE00AC45EA /* NoInfoFoundCell.swift */,
+				84E0D79028A382CE00AC45EA /* NoInfoFoundCell.xib */,
+				84E0D78928A382CD00AC45EA /* SectionHeaderCell.swift */,
+				84E0D78C28A382CE00AC45EA /* SectionHeaderCell.xib */,
+				84E0D78628A382CD00AC45EA /* ZakatCalculatorOptionsCell.swift */,
+				84E0D79228A382CE00AC45EA /* ZakatCalculatorOptionsCell.xib */,
+				84E0D78B28A382CE00AC45EA /* ZakatInputCell.swift */,
+				84E0D78828A382CD00AC45EA /* ZakatInputCell.xib */,
+				84E0D78A28A382CD00AC45EA /* ZakatSavedCalculationCell.swift */,
+				84E0D78D28A382CE00AC45EA /* ZakatSavedCalculationCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		84E0D7A228A3B6CE00AC45EA /* Zakat */ = {
+			isa = PBXGroup;
+			children = (
+				84E0D7A328A3B72A00AC45EA /* ZakatResponse.swift */,
+			);
+			path = Zakat;
+			sourceTree = "<group>";
+		};
+		84EF0D382897869500FC2433 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				84A4B36828A4C53200B1136C /* azan.mp3 */,
+				84BA07A6289666A1004EF6DA /* Assets.xcassets */,
+				848646D9289678680073AFE0 /* Colors.xcassets */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		84EF0D3E2897965200FC2433 /* SurahDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0D3F2897966D00FC2433 /* SurahDetailsVC.swift */,
+				84EF0D402897966D00FC2433 /* SurahDetailsVC.xib */,
+				84EF0D4328979F0900FC2433 /* AyatCell.swift */,
+				84EF0D4428979F0900FC2433 /* AyatCell.xib */,
+			);
+			name = SurahDetailsVC;
+			sourceTree = "<group>";
+		};
+		84EF0D472897BFFD00FC2433 /* SalatLearningVC */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0D482897C02000FC2433 /* SalatLearningVC.swift */,
+				84EF0D492897C02000FC2433 /* SalatLearningVC.xib */,
+				846E9C7F2897CA6C00C307D0 /* SalatLearningNextVC.swift */,
+				846E9C802897CA6C00C307D0 /* SalatLearningNextVC.xib */,
+				846E9C832897CA9A00C307D0 /* SalatLearningDetailsVC.swift */,
+				846E9C842897CA9A00C307D0 /* SalatLearningDetailsVC.xib */,
+			);
+			name = SalatLearningVC;
+			sourceTree = "<group>";
+		};
+		84EF0D4C2897C08700FC2433 /* Salat */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0D4D2897C0A700FC2433 /* SalatLearningModel.swift */,
+			);
+			path = Salat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		84C5623B2892A43F00D0A8BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849B72A928A0FBCA00298CCD /* FSCalendarCollectionView.h in Headers */,
+				849B72B128A0FBCA00298CCD /* FSCalendarConstants.h in Headers */,
+				849B729928A0FBCA00298CCD /* FSCalendarSeparatorDecorationView.h in Headers */,
+				849B72B328A0FBCA00298CCD /* FSCalendarDelegationFactory.h in Headers */,
+				849B72A228A0FBCA00298CCD /* FSCalendarCell.h in Headers */,
+				849B729728A0FBCA00298CCD /* FSCalendarDynamicHeader.h in Headers */,
+				849B72A028A0FBCA00298CCD /* FSCalendarTransitionCoordinator.h in Headers */,
+				849B729E28A0FBCA00298CCD /* FSCalendarWeekdayView.h in Headers */,
+				849B72AA28A0FBCA00298CCD /* FSCalendarDelegationProxy.h in Headers */,
+				849B729F28A0FBCA00298CCD /* FSCalendarStickyHeader.h in Headers */,
+				849B72AC28A0FBCA00298CCD /* FSCalendarExtensions.h in Headers */,
+				849B72B228A0FBCA00298CCD /* FSCalendarCollectionViewLayout.h in Headers */,
+				849B729D28A0FBCA00298CCD /* FSCalendarHeaderView.h in Headers */,
+				849B72AE28A0FBCA00298CCD /* FSCalendar.h in Headers */,
+				84C562432892A43F00D0A8BF /* Ibadat_GP_SDK.h in Headers */,
+				849B72A428A0FBCA00298CCD /* FSCalendarCalculator.h in Headers */,
+				849B72A728A0FBCA00298CCD /* FSCalendarAppearance.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		84C562232892A3FF00D0A8BF /* Ibadat-GP */ = {
@@ -77,15 +917,35 @@
 				84C562202892A3FF00D0A8BF /* Sources */,
 				84C562212892A3FF00D0A8BF /* Frameworks */,
 				84C562222892A3FF00D0A8BF /* Resources */,
+				84C5624B2892A43F00D0A8BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				84C562452892A43F00D0A8BF /* PBXTargetDependency */,
 			);
 			name = "Ibadat-GP";
 			productName = "Ibadat-GP";
 			productReference = 84C562242892A3FF00D0A8BF /* Ibadat-GP.app */;
 			productType = "com.apple.product-type.application";
+		};
+		84C5623F2892A43F00D0A8BF /* Ibadat-GP-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C562482892A43F00D0A8BF /* Build configuration list for PBXNativeTarget "Ibadat-GP-SDK" */;
+			buildPhases = (
+				84C5623B2892A43F00D0A8BF /* Headers */,
+				84C5623C2892A43F00D0A8BF /* Sources */,
+				84C5623D2892A43F00D0A8BF /* Frameworks */,
+				84C5623E2892A43F00D0A8BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ibadat-GP-SDK";
+			productName = "Ibadat-GP-SDK";
+			productReference = 84C562402892A43F00D0A8BF /* Ibadat_GP_SDK.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +959,10 @@
 				TargetAttributes = {
 					84C562232892A3FF00D0A8BF = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					84C5623F2892A43F00D0A8BF = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -116,6 +980,7 @@
 			projectRoot = "";
 			targets = (
 				84C562232892A3FF00D0A8BF /* Ibadat-GP */,
+				84C5623F2892A43F00D0A8BF /* Ibadat-GP-SDK */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +992,58 @@
 			files = (
 				84C562342892A40400D0A8BF /* LaunchScreen.storyboard in Resources */,
 				84C562312892A40400D0A8BF /* Assets.xcassets in Resources */,
+				84A4B36B28A4F74900B1136C /* azan.mp3 in Resources */,
 				84C5622F2892A3FF00D0A8BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C5623E2892A43F00D0A8BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84968D7E2899329500F914FA /* ifterSehriVC.xib in Resources */,
+				84E0D79D28A382CF00AC45EA /* NewCalculationHeaderCell.xib in Resources */,
+				848646DA289678680073AFE0 /* Colors.xcassets in Resources */,
+				84919E25289FBC550003AEBD /* MosqueListVC.xib in Resources */,
+				84919E1C289F91350003AEBD /* LiveCell.xib in Resources */,
+				84919E29289FBC650003AEBD /* MapViewVC.xib in Resources */,
+				84968D372898F12700F914FA /* HolidayCell.xib in Resources */,
+				84A4B36928A4C53200B1136C /* azan.mp3 in Resources */,
+				84E0D7A828A3B91C00AC45EA /* ZakatTopCell.xib in Resources */,
+				84968D312898DEFC00F914FA /* TasbihVC.xib in Resources */,
+				84E0D79A28A382CF00AC45EA /* SectionHeaderCell.xib in Resources */,
+				84968D79289928FF00F914FA /* SalatCell.xib in Resources */,
+				846E9C822897CA6C00C307D0 /* SalatLearningNextVC.xib in Resources */,
+				846B9AB728968DBB0061C7A3 /* HadithVC.xib in Resources */,
+				84919E10289F87160003AEBD /* NearestMosqueVC.xib in Resources */,
+				846B9ABC28968EF90061C7A3 /* DuaHadithDetailsVC.xib in Resources */,
+				84E0D78528A3826800AC45EA /* ZakatCalculationVC.xib in Resources */,
+				84BF5AC3289A669A00EB7742 /* IfterCell.xib in Resources */,
+				84E0D79B28A382CF00AC45EA /* ZakatSavedCalculationCell.xib in Resources */,
+				84E0D79628A382CE00AC45EA /* ZakatInputCell.xib in Resources */,
+				84BA079D2896627B004EF6DA /* SurahVC.xib in Resources */,
+				84BA07AD289674DC004EF6DA /* ListCell.xib in Resources */,
+				84BA079328966041004EF6DA /* Localizable.strings in Resources */,
+				849B69B0289BC00C00463349 /* TashbiContCell.xib in Resources */,
+				84EF0D422897966D00FC2433 /* SurahDetailsVC.xib in Resources */,
+				84BA07A7289666A1004EF6DA /* Assets.xcassets in Resources */,
+				84EF0D4628979F0900FC2433 /* AyatCell.xib in Resources */,
+				84E0D79E28A382CF00AC45EA /* NoInfoFoundCell.xib in Resources */,
+				84EF0D4B2897C02000FC2433 /* SalatLearningVC.xib in Resources */,
+				84968D7528991C7A00F914FA /* SalatTimeVC.xib in Resources */,
+				849B731728A1089200298CCD /* CalenderCell.xib in Resources */,
+				849B69AC289BA22700463349 /* TashbiCell.xib in Resources */,
+				84E0D78028A3824A00AC45EA /* ZakatVC.xib in Resources */,
+				84919E15289F873A0003AEBD /* LiveVideoVC.xib in Resources */,
+				84968D3B2898F4C700F914FA /* HolidayHeader.xib in Resources */,
+				84E0D7A028A382CF00AC45EA /* ZakatCalculatorOptionsCell.xib in Resources */,
+				84919E31289FC1390003AEBD /* MosqueCell.xib in Resources */,
+				848646E028967DE20073AFE0 /* DuaVC.xib in Resources */,
+				846E9C862897CA9A00C307D0 /* SalatLearningDetailsVC.xib in Resources */,
+				84830C7F2897E7A6009205C8 /* CompassVC.xib in Resources */,
+				84830C7A2897DD55009205C8 /* WallpaperCell.xib in Resources */,
+				846E9C8C2897D69300C307D0 /* WallpaperVC.xib in Resources */,
+				84968D2B2898DBF500F914FA /* IslamicCalenderVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,9 +1060,136 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84C5623C2892A43F00D0A8BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BF5AC2289A669A00EB7742 /* IfterCell.swift in Sources */,
+				84E0D79C28A382CF00AC45EA /* NewCalculationHeaderCell.swift in Sources */,
+				84968D7428991C7A00F914FA /* SalatTimeVC.swift in Sources */,
+				84E0D7A428A3B72A00AC45EA /* ZakatResponse.swift in Sources */,
+				84919E21289FB3840003AEBD /* MosqueModel.swift in Sources */,
+				849B72A128A0FBCA00298CCD /* FSCalendarSeparatorDecorationView.m in Sources */,
+				84C5624F2892A84600D0A8BF /* Enums.swift in Sources */,
+				84919E28289FBC650003AEBD /* MapViewVC.swift in Sources */,
+				84968D3A2898F4C700F914FA /* HolidayHeader.swift in Sources */,
+				849B729A28A0FBCA00298CCD /* FSCalendar.m in Sources */,
+				849B72A828A0FBCA00298CCD /* FSCalendarCell.m in Sources */,
+				84919E1B289F91350003AEBD /* LiveCell.swift in Sources */,
+				84968D63289904AA00F914FA /* PrayerAdjustment.swift in Sources */,
+				84830C7E2897E7A6009205C8 /* CompassVC.swift in Sources */,
+				849B69AB289BA22700463349 /* TashbiCell.swift in Sources */,
+				84968D6A289904AA00F914FA /* MathUtilities.swift in Sources */,
+				849B729C28A0FBCA00298CCD /* FSCalendarCollectionViewLayout.m in Sources */,
+				84968D67289904AA00F914FA /* Coordinates.swift in Sources */,
+				849B72B028A0FBCA00298CCD /* FSCalendarHeaderView.m in Sources */,
+				849B72A528A0FBCA00298CCD /* FSCalendarDelegationProxy.m in Sources */,
+				849B729828A0FBCA00298CCD /* FSCalendarExtensions.m in Sources */,
+				84919E0B289F7C240003AEBD /* AppImage.swift in Sources */,
+				84968D5E289904AA00F914FA /* Astronomical.swift in Sources */,
+				849B729B28A0FBCA00298CCD /* FSCalendarConstants.m in Sources */,
+				846E9C8E2897DB1600C307D0 /* WallpaperModel.swift in Sources */,
+				849B69A6289B8ABD00463349 /* CircularProgressView.swift in Sources */,
+				84968D65289904AA00F914FA /* Prayer.swift in Sources */,
+				84BA07A92896705D004EF6DA /* Bundle++.swift in Sources */,
+				84BA07A12896638A004EF6DA /* SurahModel.swift in Sources */,
+				84E0D7AE28A3CB0C00AC45EA /* AlarmManager.swift in Sources */,
+				84968D62289904AA00F914FA /* HighLatitudeRule.swift in Sources */,
+				849B72B428A0FBCA00298CCD /* FSCalendarCollectionView.m in Sources */,
+				84830C792897DD55009205C8 /* WallpaperCell.swift in Sources */,
+				84E0D7A728A3B91C00AC45EA /* ZakatTopCell.swift in Sources */,
+				84BA079C2896627B004EF6DA /* SurahVC.swift in Sources */,
+				849B72A628A0FBCA00298CCD /* FSCalendarAppearance.m in Sources */,
+				84E0D79F28A382CF00AC45EA /* NoInfoFoundCell.swift in Sources */,
+				84968D2A2898DBF500F914FA /* IslamicCalenderVC.swift in Sources */,
+				84968D5C289904AA00F914FA /* SolarTime.swift in Sources */,
+				84968D362898F12700F914FA /* HolidayCell.swift in Sources */,
+				84EF0D4A2897C02000FC2433 /* SalatLearningVC.swift in Sources */,
+				84EF0D412897966D00FC2433 /* SurahDetailsVC.swift in Sources */,
+				846B9AAF2896822D0061C7A3 /* URLSession++.swift in Sources */,
+				84919E0F289F87160003AEBD /* NearestMosqueVC.swift in Sources */,
+				849B72A328A0FBCA00298CCD /* FSCalendarDelegationFactory.m in Sources */,
+				84968D7D2899329500F914FA /* ifterSehriVC.swift in Sources */,
+				84E0D79928A382CE00AC45EA /* ZakatInputCell.swift in Sources */,
+				84968D5B289904AA00F914FA /* PrayerTimes.swift in Sources */,
+				84E0D78428A3826800AC45EA /* ZakatCalculationVC.swift in Sources */,
+				84968D66289904AA00F914FA /* CalculationParameters.swift in Sources */,
+				84968D78289928FF00F914FA /* SalatCell.swift in Sources */,
+				84968D59289904AA00F914FA /* Qibla.swift in Sources */,
+				846B9AB628968DBB0061C7A3 /* HadithVC.swift in Sources */,
+				84968D64289904AA00F914FA /* Madhab.swift in Sources */,
+				849B69B2289BE98800463349 /* String++.swift in Sources */,
+				84919E30289FC1390003AEBD /* MosqueCell.swift in Sources */,
+				849B72AF28A0FBCA00298CCD /* FSCalendarWeekdayView.m in Sources */,
+				846E9C8B2897D69300C307D0 /* WallpaperVC.swift in Sources */,
+				846B9AB328968D2C0061C7A3 /* HadithModel.swift in Sources */,
+				848646E5289680E50073AFE0 /* DuaModel.swift in Sources */,
+				84EF0D3D2897952B00FC2433 /* SurhaDetailsModel.swift in Sources */,
+				84919E24289FBC550003AEBD /* MosqueListVC.swift in Sources */,
+				84E0D79428A382CE00AC45EA /* ZakatCalculatorOptionsCell.swift in Sources */,
+				84E0D79828A382CE00AC45EA /* ZakatSavedCalculationCell.swift in Sources */,
+				84E0D79728A382CE00AC45EA /* SectionHeaderCell.swift in Sources */,
+				84EF0D4E2897C0A700FC2433 /* SalatLearningModel.swift in Sources */,
+				848646E2289680060073AFE0 /* APIService.swift in Sources */,
+				84968D6D289904AA00F914FA /* SunnahTimes.swift in Sources */,
+				84968D61289904AA00F914FA /* Rouding.swift in Sources */,
+				84BA079828966088004EF6DA /* ConstantData.swift in Sources */,
+				84BF5AB8289A3F7300EB7742 /* UIViewController++.swift in Sources */,
+				84968D6C289904AA00F914FA /* Minute.swift in Sources */,
+				84E0D77F28A3824A00AC45EA /* ZakatVC.swift in Sources */,
+				848646DF28967DE20073AFE0 /* DuaVC.swift in Sources */,
+				84919E14289F873A0003AEBD /* LiveVideoVC.swift in Sources */,
+				84968D332898EED500F914FA /* IslamicHolidayResponse.swift in Sources */,
+				84968D70289915EA00F914FA /* CLLocation+Extension.swift in Sources */,
+				84BA07AC289674DC004EF6DA /* ListCell.swift in Sources */,
+				849B72AB28A0FBCA00298CCD /* FSCalendarCalculator.m in Sources */,
+				84968D5A289904AA00F914FA /* AdhanObjc.swift in Sources */,
+				84BA07B128967693004EF6DA /* Color++.swift in Sources */,
+				84EF0D4528979F0900FC2433 /* AyatCell.swift in Sources */,
+				84968D3D2898FE1100F914FA /* AppData.swift in Sources */,
+				849B72AD28A0FBCA00298CCD /* FSCalendarStickyHeader.m in Sources */,
+				84968D6B289904AA00F914FA /* Angle.swift in Sources */,
+				846E9C852897CA9A00C307D0 /* SalatLearningDetailsVC.swift in Sources */,
+				849B731628A1089200298CCD /* CalenderCell.swift in Sources */,
+				84C5624D2892A7DC00D0A8BF /* Ibatad.swift in Sources */,
+				84968D60289904AA00F914FA /* CalculationMethod.swift in Sources */,
+				849B69A4289B715500463349 /* UIView++.swift in Sources */,
+				84968D302898DEFC00F914FA /* TasbihVC.swift in Sources */,
+				84968D69289904AA00F914FA /* DateUtilities.swift in Sources */,
+				84968D68289904AA00F914FA /* Shafaq.swift in Sources */,
+				846B9ABB28968EF90061C7A3 /* DuaHadithDetailsVC.swift in Sources */,
+				849B69AF289BC00C00463349 /* TashbiContCell.swift in Sources */,
+				84968D5D289904AA00F914FA /* SolarCoordinates.swift in Sources */,
+				84919E1F289FB2CB0003AEBD /* NearByPlace.swift in Sources */,
+				84919E18289F8C420003AEBD /* LiveModel.swift in Sources */,
+				84BF5AB6289A370200EB7742 /* LocationManagerService.swift in Sources */,
+				84BF5ABF289A55FD00EB7742 /* Date++.swift in Sources */,
+				849B731928A108D400298CCD /* FSCalendarLocale.swift in Sources */,
+				84C562562892AAB500D0A8BF /* URLConstant.swift in Sources */,
+				849B72B528A0FBCA00298CCD /* FSCalendarTransitionCoordinator.m in Sources */,
+				846E9C812897CA6C00C307D0 /* SalatLearningNextVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		84C562452892A43F00D0A8BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C5623F2892A43F00D0A8BF /* Ibadat-GP-SDK */;
+			targetProxy = 84C562442892A43F00D0A8BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		84BA079528966041004EF6DA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BA079428966041004EF6DA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		84C5622D2892A3FF00D0A8BF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +1326,7 @@
 		84C562392892A40400D0A8BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,11 +1334,15 @@
 				DEVELOPMENT_TEAM = TXRJVVLSAS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ibadat-GP/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Permissionn Needs for update distannce";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission needs for compass shohw";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +1359,7 @@
 		84C5623A2892A40400D0A8BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,11 +1367,15 @@
 				DEVELOPMENT_TEAM = TXRJVVLSAS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ibadat-GP/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Permissionn Needs for update distannce";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission needs for compass shohw";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +1386,89 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84C562492892A43F00D0A8BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLY_RULES_IN_COPY_HEADERS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TXRJVVLSAS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ibadat-GP-SDK/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location needs for calculate distance of MAKKA";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Permissionn Needs for update distannce";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission needs for compass shohw";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "$(PRODUCT_NAME)  Need Reminder permission for Alarm";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gakkMedia.Ibadat-GP-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84C5624A2892A43F00D0A8BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLY_RULES_IN_COPY_HEADERS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TXRJVVLSAS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ibadat-GP-SDK/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location needs for calculate distance of MAKKA";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Permissionn Needs for update distannce";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission needs for compass shohw";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "$(PRODUCT_NAME)  Need Reminder permission for Alarm";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gakkMedia.Ibadat-GP-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -353,6 +1489,15 @@
 			buildConfigurations = (
 				84C562392892A40400D0A8BF /* Debug */,
 				84C5623A2892A40400D0A8BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C562482892A43F00D0A8BF /* Build configuration list for PBXNativeTarget "Ibadat-GP-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C562492892A43F00D0A8BF /* Debug */,
+				84C5624A2892A43F00D0A8BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
