@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-    spec.source_files  = "Ibadat-GP-SDK", "Ibadat-GP-SDK/**/*.{swift,h,m,xib}"
+    spec.source_files  = "Ibadat-GP-SDK", "Ibadat-GP-SDK/**/*.{swift,h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -104,7 +104,10 @@ Pod::Spec.new do |spec|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-
+    spec.resource_bundles = {
+    'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.xib'],
+    'Ibadat-GP-SDK' => [ 'Ibadat-GP-SDK/**/*.xcassets']
+    }
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
 
