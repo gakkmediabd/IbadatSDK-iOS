@@ -1,9 +1,9 @@
 # IbadatSDK-iOS
 
-[![CI Status](https://img.shields.io/travis/MD%20Azizur%20Rahman/Ibadat-GP-SDK.svg?style=flat)](https://travis-ci.org/MD%20Azizur%20Rahman/Ibadat-GP-SDK)
-[![Version](https://img.shields.io/cocoapods/v/IbadatSDK-iOS.svg?style=flat)](https://github.com/gakkmediabd/IbadatSDK-iOS/releases/tag/0.0.8)
-[![License](https://img.shields.io/cocoapods/l/IbadatSDK-iOS.svg?style=flat)](https://github.com/gakkmediabd/IbadatSDK-iOS/blob/main/LICENSE)
+[![Version](https://img.shields.io/cocoapods/v/Ibadat-GP-SDK)](https://cocoapods.org/pods/Ibadat-GP-SDK)
+[![License](https://img.shields.io/github/license/gakkmediabd/IbadatSDK-iOS)](https://github.com/gakkmediabd/IbadatSDK-iOS/blob/main/LICENSE)
 [![Platforms](https://img.shields.io/badge/Platforms-iOS%2010%2B-blue.svg)](#)
+[![Languages](https://img.shields.io/badge/language-%20swift-FF69B4.svg?style=plastic)](#)
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
