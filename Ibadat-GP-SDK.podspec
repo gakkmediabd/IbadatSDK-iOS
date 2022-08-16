@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-    spec.source_files  = "Ibadat-GP-SDK", "Ibadat-GP-SDK/**/*.{swift,h,m,xib}"
+    spec.source_files  = "Ibadat-GP-SDK/**/*.{swift,h,m,xib}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

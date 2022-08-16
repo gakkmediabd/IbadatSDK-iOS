@@ -10,6 +10,7 @@ import CoreLocation
 
 class ifterSehriVC: UIViewController {
     
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var staticStackView: UIStackView!
@@ -67,7 +68,7 @@ class ifterSehriVC: UIViewController {
         tableView.register(IfterCell.nib, forCellReuseIdentifier: IfterCell.identifier)
         tableView.dataSource = self
         tableView.delegate = self
-        
+        tableView.backgroundColor = .appWhite
         //header date
         let dateFormate = DateFormatter()
         dateFormate.dateFormat = "EEEE, d MMMM YYYY"
@@ -77,7 +78,7 @@ class ifterSehriVC: UIViewController {
         self.todayDateLabel.textColor = .appWhite
         
         self.btnPlace.setTitle(ConstantData.DHAKA, for: .normal)
-        
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -95,6 +96,9 @@ class ifterSehriVC: UIViewController {
         super.viewWillDisappear(animated)
     }
     
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismiss(animated: true)
+    }
     @IBAction func onPlacePressed(_ sender: Any) {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let dhaka = UIAlertAction(title: ConstantData.DHAKA, style: .default) { action in
@@ -144,6 +148,7 @@ class ifterSehriVC: UIViewController {
         self.present(alert, animated: true) {
             
         }
+        
     }
     @IBAction func onSehriAlertPressed(_ sender: Any) {
         guard let prayerTime = prayerTime else {

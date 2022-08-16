@@ -9,6 +9,9 @@ import UIKit
 
 class DuaHadithDetailsVC: UIViewController {
 
+    @IBOutlet weak var btnBack: UIButton!
+    
+    
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
@@ -54,8 +57,12 @@ class DuaHadithDetailsVC: UIViewController {
             setDataWith(hadith: hadithList[index])
         }
         
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
-
+    @IBAction func onBackPressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 
     @IBAction func onNextPressed(_ sender: Any) {
         index += 1

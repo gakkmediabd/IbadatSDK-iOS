@@ -9,6 +9,9 @@ import UIKit
 
 class HadithVC: UIViewController {
 
+    
+    @IBOutlet weak var btnBacl: UIButton!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var loader: UIActivityIndicatorView!
     private var hadithList : [HadithModel] = []
@@ -24,8 +27,9 @@ class HadithVC: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+        collectionView.backgroundColor = .appWhite
         loader.color = .tintColor
+        btnBacl.setImage(AppImage.back.uiImage, for: .normal)
     }
     
 
@@ -44,6 +48,10 @@ class HadithVC: UIViewController {
                 #endif
             }
         }
+    }
+    
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismiss(animated: true)
     }
 }
 extension HadithVC : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate{

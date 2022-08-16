@@ -33,6 +33,10 @@ enum AppImage : String{
     case notificationOn = "bell.fill"
     case notificationOff = "bell.slash.fill"
     
+    //nav
+    case back = "chevron.backward"
+    case forword = "chevron.forward"
+    
     //get uiImage from appImage
     var uiImage : UIImage?{
         if #available(iOS 13, *){

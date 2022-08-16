@@ -1348,7 +1348,9 @@
 				INFOPLIST_FILE = "Ibadat-GP/Info.plist";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Permissionn Needs for update distannce";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission needs for compass shohw";
-				INFOPLIST_KEY_NSRemindersUsageDescription = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app need Photo addd permission for save wallpaper";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library access need for save wallpaper";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Ibadat-GP";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1381,7 +1383,9 @@
 				INFOPLIST_FILE = "Ibadat-GP/Info.plist";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Permissionn Needs for update distannce";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission needs for compass shohw";
-				INFOPLIST_KEY_NSRemindersUsageDescription = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app need Photo addd permission for save wallpaper";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library access need for save wallpaper";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Ibadat-GP";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

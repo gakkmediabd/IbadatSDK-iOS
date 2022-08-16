@@ -9,6 +9,10 @@ import UIKit
 import AVFoundation
 
 class SurahDetailsVC: UIViewController {
+    
+    @IBOutlet weak var btnBack: UIButton!
+    
+    
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -61,6 +65,8 @@ class SurahDetailsVC: UIViewController {
         contentView.layer.cornerRadius  = 8
         contentView.layer.masksToBounds = false
         
+        collectionView.clipsToBounds = true
+        collectionView.layer.cornerRadius = 8
         
         let t = CGAffineTransform(scaleX: 0.8, y: 0.8)
         playerProgress.transform = t
@@ -80,6 +86,8 @@ class SurahDetailsVC: UIViewController {
         
         ayatLoad()
         playerSetup()
+        
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -96,6 +104,9 @@ class SurahDetailsVC: UIViewController {
         if audioPlayer.rate > 0 {
             audioPlayer.pause()
         }
+    }
+    @IBAction func onBackPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     
     
@@ -186,8 +197,8 @@ extension SurahDetailsVC : UICollectionViewDataSource,UICollectionViewDelegateFl
             fatalError("Surah cell load failed")
         }
         let obj = ayatList[indexPath.row]
-        cell.titleLabel.text  = obj.text
-        cell.subtitleLabel.text = obj.textInArabic
+        cell.subtitleLabel.text  = obj.text
+        cell.titleLabel.text = obj.textInArabic
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -197,7 +208,7 @@ extension SurahDetailsVC : UICollectionViewDataSource,UICollectionViewDelegateFl
         return 10
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width - 32 - 16
+        let width = UIScreen.main.bounds.width - 32 - 32
         
         let obj = ayatList[indexPath.row]
         

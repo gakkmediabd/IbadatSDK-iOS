@@ -5,12 +5,12 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SalatLearningNextVC" customModule="Ibadat_GP_SDK" customModuleProvider="target">
             <connections>
+                <outlet property="btnBack" destination="VA7-wq-UpP" id="4Gh-Ao-72l"/>
                 <outlet property="collectionView" destination="0qW-or-Jnf" id="xUM-3B-VIE"/>
                 <outlet property="loader" destination="Czh-No-VMQ" id="gHy-aM-7sh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,8 +22,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0qW-or-Jnf">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RS0-CL-dMA">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -38,23 +38,51 @@
                         <constraint firstAttribute="width" constant="40" id="jv2-HO-r1d"/>
                     </constraints>
                 </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pf-Wk-Fzw">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VA7-wq-UpP">
+                            <rect key="frame" x="16" y="8" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="VA7-wq-UpP" secondAttribute="height" id="XYu-t2-a2d"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="chevron.backward">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="semibold"/>
+                            </state>
+                            <connections>
+                                <action selector="onBackPressed:" destination="-1" eventType="touchUpInside" id="7k1-qg-UlG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.60392156860000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="VA7-wq-UpP" firstAttribute="top" secondItem="1pf-Wk-Fzw" secondAttribute="top" constant="8" id="7xt-Z0-W4w"/>
+                        <constraint firstAttribute="bottom" secondItem="VA7-wq-UpP" secondAttribute="bottom" constant="8" id="Aee-XO-Amw"/>
+                        <constraint firstAttribute="height" constant="44" id="EID-fp-nf8"/>
+                        <constraint firstItem="VA7-wq-UpP" firstAttribute="leading" secondItem="1pf-Wk-Fzw" secondAttribute="leading" constant="16" id="R1C-O6-vtH"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.070588235289999995" green="0.60392156860000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0qW-or-Jnf" secondAttribute="bottom" id="Dkm-Rh-Ws4"/>
+                <constraint firstItem="0qW-or-Jnf" firstAttribute="top" secondItem="1pf-Wk-Fzw" secondAttribute="bottom" id="02r-mH-Aav"/>
+                <constraint firstItem="1pf-Wk-Fzw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2xI-95-un7"/>
+                <constraint firstAttribute="bottom" secondItem="0qW-or-Jnf" secondAttribute="bottom" id="AvG-wP-HSz"/>
                 <constraint firstItem="Czh-No-VMQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LfL-4S-qhI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0qW-or-Jnf" secondAttribute="trailing" id="Xlp-XL-TVU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1pf-Wk-Fzw" secondAttribute="trailing" id="Z2q-OY-ELW"/>
                 <constraint firstItem="0qW-or-Jnf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cq4-Nf-V4z"/>
                 <constraint firstItem="Czh-No-VMQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="iSH-Ix-1Rf"/>
-                <constraint firstItem="0qW-or-Jnf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pC3-8I-X5m"/>
+                <constraint firstItem="1pf-Wk-Fzw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xsP-QO-Wdt"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="96"/>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="chevron.backward" width="36" height="36"/>
     </resources>
 </document>

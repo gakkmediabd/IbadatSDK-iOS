@@ -9,6 +9,7 @@ import UIKit
 
 class WallpaperVC: UIViewController {
     
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet weak var loader: UIActivityIndicatorView!
     private var wallpaperList : [WallpaperModel] = []
@@ -25,8 +26,9 @@ class WallpaperVC: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+        collectionView.backgroundColor = .appWhite
         loader.color = .tintColor
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +47,10 @@ class WallpaperVC: UIViewController {
             }
         }
     }
-
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
 }
 extension WallpaperVC : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -71,5 +76,42 @@ extension WallpaperVC : UICollectionViewDataSource,UICollectionViewDelegateFlowL
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         //download
+        showAlert(title: nil, message: ConstantData.DOWNLOAD_ALERT, done: ConstantData.DOWNLOAD, cancel: ConstantData.CANCEL) {
+            //start download
+            self.downloadImage(from: URL(string: self.wallpaperList[indexPath.row].physicalURL)!)
+        }
     }
+    
+    func writeToPhotoAlbum(image: UIImage) {
+        
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
+    }
+
+        @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+            if let error = error {
+                showAlert(title: ConstantData.DOWNLOAD_ERROR, message: error.localizedDescription, cancel: ConstantData.CANCEL) {
+                    
+                }
+            }else{
+                showAlert(title: ConstantData.DOWNLOAD_DONE, message: ConstantData.DOWNLOAD_DONE_MESSAGE, cancel: ConstantData.CANCEL) {
+                    
+                }
+            }
+        }
+}
+
+extension WallpaperVC{
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    func downloadImage(from url: URL) {
+        print("Download Started")
+        getData(from: url) { data, response, error in
+            guard let data = data, error == nil,let img = UIImage(data: data) else { return }
+            DispatchQueue.main.async {
+                self.writeToPhotoAlbum(image: img)
+            }
+        }
+    }
+    
 }

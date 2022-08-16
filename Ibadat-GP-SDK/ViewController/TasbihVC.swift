@@ -10,6 +10,8 @@ import AVFoundation
 
 class TasbihVC: UIViewController {
     
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var btnBack: UIButton!
     private var systemSoundID: SystemSoundID = 1121 // 1122
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var bottomView: UIView!
@@ -56,8 +58,7 @@ class TasbihVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .backgroundColor
-
+        contentView.backgroundColor =  .backgroundColor
         topView.layer.cornerRadius = 16
         if #available(iOS 11.0, *) {
             topView.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMaxYCorner]
@@ -123,6 +124,7 @@ class TasbihVC: UIViewController {
         count = 0
         
         btnSound.setImage(AppData.shared.isTasbiSoundEnable ? AppImage.sound.uiImage : AppImage.noSound.uiImage, for: .normal)
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -133,6 +135,10 @@ class TasbihVC: UIViewController {
         self.heightConstant.constant  =  constant
            
     }
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     @IBAction func onSoundControllPressed(_ sender: Any) {
         AppData.shared.isTasbiSoundEnable  = !AppData.shared.isTasbiSoundEnable
         btnSound.setImage(AppData.shared.isTasbiSoundEnable ? AppImage.sound.uiImage : AppImage.noSound.uiImage, for: .normal)

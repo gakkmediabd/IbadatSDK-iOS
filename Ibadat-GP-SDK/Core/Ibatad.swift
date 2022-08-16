@@ -52,8 +52,9 @@ public class IbadatSdkCore : NSObject{
     }
     public func openFeature(by type : FeatureType,presentController : UIViewController){
         let nav =  openFeature(by: type)
-        //nav.modalPresentationStyle = .fullScreen
-        nav.navigationBar.backgroundColor  =  .tintColor
+        nav.modalPresentationStyle = .fullScreen
+        nav.isNavigationBarHidden = true
+        
         presentController.present(nav, animated: true)
     }
 }

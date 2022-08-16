@@ -8,6 +8,9 @@
 import UIKit
 
 internal class SurahVC: UIViewController {
+    
+    @IBOutlet weak var btnBack: UIButton!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var surahList = ConstantData.getAllSurah()
@@ -26,8 +29,14 @@ internal class SurahVC: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.backgroundColor = .appWhite
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
 
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
 }
 
 extension SurahVC : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate{

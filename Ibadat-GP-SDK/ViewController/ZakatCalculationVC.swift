@@ -13,6 +13,7 @@ struct ZakatItem {
 }
 
 class ZakatCalculationVC: UIViewController {
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var tableView: UITableView!
     //@IBOutlet weak var saveBtn: UIButton!
     fileprivate var netAsset : Double = 0.0
@@ -36,21 +37,16 @@ class ZakatCalculationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundColor = .appWhite
         self.populateZakatItems()
         self.configureTableView()
-        self.initialSetup()
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
+    }
+    @IBAction func onBackPressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
-    func initialSetup(){
-        //self.saveBtn.setTitle("txt_save", for: .normal)
-//        self.saveBtn.setClickListener {
-//            if self.netAsset > 0.0{
-//                let param = self.prepareParameters()
-//                //print("param-->\(param)")
-//
-//            }
-//        }
-    }
+    
 
 }
 

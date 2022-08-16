@@ -8,6 +8,7 @@
 import UIKit
 
 class SalatLearningDetailsVC: UIViewController {
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailsTextView: UITextView!
@@ -22,6 +23,7 @@ class SalatLearningDetailsVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        contentView.backgroundColor = .appWhite
         contentView.clipsToBounds = true
         contentView.layer.shadowColor = UIColor.grayColor.cgColor
         contentView.layer.shadowOffset = .zero
@@ -32,13 +34,13 @@ class SalatLearningDetailsVC: UIViewController {
         
         titleLabel.textColor = .titleColot
         detailsTextView.textColor = .subTitleColot
-        
+        detailsTextView.backgroundColor = .appWhite
         guard let salat = salat else {
             return
         }
         
         titleLabel.text = salat.topicName
-        
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -58,5 +60,8 @@ class SalatLearningDetailsVC: UIViewController {
             }
         }
     }
-
+    @IBAction func onBackPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

@@ -9,6 +9,7 @@ import UIKit
 import CoreLocation
 
 class CompassVC: UIViewController ,CLLocationManagerDelegate{
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var mokkaLabel: UILabel!
     
     @IBOutlet weak var contentView: UIView!
@@ -68,9 +69,13 @@ class CompassVC: UIViewController ,CLLocationManagerDelegate{
             self.campassImageView.transform = CGAffineTransform(rotationAngle: -bearing)
         }
         distanceCalculation()
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
 
-
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         let newHeading = newHeading.trueHeading

@@ -8,6 +8,8 @@
 import UIKit
 
 class MosqueListVC: UIViewController {
+    @IBOutlet weak var btnBack: UIButton!
+    
     @IBOutlet weak var btn1km: UIButton!
     @IBOutlet weak var btn5km: UIButton!
     @IBOutlet weak var btn10km: UIButton!
@@ -75,13 +77,17 @@ class MosqueListVC: UIViewController {
         btn1km.backgroundColor = .tintColor
         btn5km.backgroundColor = .buttonBackgroundColor
         btn10km.backgroundColor = .buttonBackgroundColor
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadMosque()
     }
-
+    @IBAction func onBackPressed(_ sender: Any) {
+        self.tabBarController?.dismiss(animated: true)
+    }
+    
     @IBAction func on1kmPressed(_ sender: Any) {
         radius = "1000"
         btn1km.isSelected = true

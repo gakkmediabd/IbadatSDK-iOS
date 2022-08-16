@@ -9,6 +9,7 @@ import UIKit
 import MapKit
 
 class MapViewVC: UIViewController {
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     var mosqueList : [MosqueModel] = []
     
@@ -35,6 +36,8 @@ class MapViewVC: UIViewController {
         let annotation = MKPointAnnotation()
         annotation.coordinate = AppData.shared.currentLocation.coordinate
         mapView.addAnnotation(annotation)
+        
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +45,10 @@ class MapViewVC: UIViewController {
         print(#function)
         loadMap()
     }
-
+    @IBAction func onBackPressed(_ sender: Any) {
+        self.tabBarController?.dismiss(animated: true)
+    }
+    
 }
 extension MapViewVC{
     func loadMap(){

@@ -9,6 +9,7 @@ import UIKit
 
 class ZakatVC: UIViewController {
 
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnZakatCalculator: UIButton!
     @IBOutlet weak var loader: UIActivityIndicatorView!
@@ -26,7 +27,7 @@ class ZakatVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .appWhite
+        
         btnZakatCalculator.layer.cornerRadius  = 8
         btnZakatCalculator.backgroundColor = .tintColor
         
@@ -36,6 +37,7 @@ class ZakatVC: UIViewController {
         tableView.dataSource = self
         
         loader.color = .tintColor
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -55,7 +57,10 @@ class ZakatVC: UIViewController {
             }
         }
     }
-
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     @IBAction func onZakatCalculatorPressed(_ sender: Any) {
         self.navigationController?.pushViewController(ZakatCalculationVC(), animated: true)
     }

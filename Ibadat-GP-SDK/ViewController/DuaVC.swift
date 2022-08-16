@@ -8,6 +8,10 @@
 import UIKit
 
 class DuaVC: UIViewController {
+    
+    
+    
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var loader: UIActivityIndicatorView!
     private var duaList : [DuaModel] = []
@@ -24,7 +28,10 @@ class DuaVC: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.backgroundColor = .appWhite
         loader.color = .tintColor
+        
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -42,6 +49,10 @@ class DuaVC: UIViewController {
                 #endif
             }
         }
+    }
+    
+    @IBAction func onbackPressed(_ sender: Any) {
+        dismiss(animated: true)
     }
 }
 extension DuaVC : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate{

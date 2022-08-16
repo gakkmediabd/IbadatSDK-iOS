@@ -8,6 +8,7 @@
 import UIKit
 
 class SalatTimeVC: UIViewController {
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var currentTimeLabel: UILabel!
     @IBOutlet weak var currentDateLabel: UILabel!
@@ -79,6 +80,8 @@ class SalatTimeVC: UIViewController {
         clockTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(currentTime), userInfo: nil, repeats: true)
         nextSalatTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(nextSalatRemaing), userInfo: nil, repeats: true)
         
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -89,6 +92,9 @@ class SalatTimeVC: UIViewController {
         super.viewWillDisappear(animated)
         clockTimer.invalidate()
         nextSalatTimer.invalidate()
+    }
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismiss(animated: true)
     }
     
     @IBAction func onnPreviousDatePressed(_ sender: Any) {

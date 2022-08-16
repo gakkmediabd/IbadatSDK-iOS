@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveVideoVC" customModule="Ibadat_GP_SDK" customModuleProvider="target">
             <connections>
+                <outlet property="btnBackl" destination="Oi9-Vg-grD" id="elp-Ue-7hj"/>
                 <outlet property="collectionView" destination="HaO-Cf-cZY" id="EXY-qn-Zfu"/>
                 <outlet property="loader" destination="WlZ-Xp-FmT" id="gt7-tO-fz6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HaO-Cf-cZY">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fog-yc-fZG">
                         <size key="itemSize" width="128" height="128"/>
@@ -38,21 +39,52 @@
                         <constraint firstAttribute="width" constant="40" id="hgm-8N-oUd"/>
                     </constraints>
                 </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmD-a0-yZM">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi9-Vg-grD">
+                            <rect key="frame" x="16" y="8" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Oi9-Vg-grD" secondAttribute="height" id="dqy-Xx-OQ8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="chevron.backward">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="semibold"/>
+                            </state>
+                            <connections>
+                                <action selector="onBackPressed:" destination="-1" eventType="touchUpInside" id="FEp-w2-GK5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.60392156860000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Oi9-Vg-grD" firstAttribute="top" secondItem="fmD-a0-yZM" secondAttribute="top" constant="8" id="38A-Dh-B8V"/>
+                        <constraint firstAttribute="bottom" secondItem="Oi9-Vg-grD" secondAttribute="bottom" constant="8" id="CQx-2W-B6F"/>
+                        <constraint firstAttribute="height" constant="44" id="Ysk-fr-r4Y"/>
+                        <constraint firstItem="Oi9-Vg-grD" firstAttribute="leading" secondItem="fmD-a0-yZM" secondAttribute="leading" constant="16" id="w9f-kU-y6f"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.070588235289999995" green="0.60392156860000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="HaO-Cf-cZY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7hw-NG-G6z"/>
-                <constraint firstItem="HaO-Cf-cZY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9SB-wL-mSE"/>
+                <constraint firstAttribute="bottom" secondItem="HaO-Cf-cZY" secondAttribute="bottom" id="LW8-jh-c8U"/>
                 <constraint firstItem="WlZ-Xp-FmT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NPB-hY-gss"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fmD-a0-yZM" secondAttribute="trailing" id="PU9-hA-Cnm"/>
                 <constraint firstItem="WlZ-Xp-FmT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Qfr-ij-LuJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HaO-Cf-cZY" secondAttribute="trailing" id="X41-xs-WWV"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HaO-Cf-cZY" secondAttribute="bottom" id="rff-iT-YKD"/>
+                <constraint firstItem="fmD-a0-yZM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Xc9-gN-uMe"/>
+                <constraint firstItem="HaO-Cf-cZY" firstAttribute="top" secondItem="fmD-a0-yZM" secondAttribute="bottom" id="pwn-Ba-EcI"/>
+                <constraint firstItem="fmD-a0-yZM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rnO-bk-ND4"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="96"/>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>
+        <image name="chevron.backward" width="36" height="36"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

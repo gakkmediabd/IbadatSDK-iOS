@@ -12,6 +12,7 @@ import AVKit
 
 class LiveVideoVC: UIViewController {
 
+    @IBOutlet weak var btnBackl: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var loader: UIActivityIndicatorView!
     private var liveList : [LiveVideo]  = []
@@ -29,8 +30,9 @@ class LiveVideoVC: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+        collectionView.backgroundColor = .appWhite
         loader.color = .tintColor
+        btnBackl.setImage(AppImage.back.uiImage, for: .normal)
     }
 
 
@@ -52,7 +54,10 @@ class LiveVideoVC: UIViewController {
             }
         }
     }
-
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
 }
 extension LiveVideoVC : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

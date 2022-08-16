@@ -8,6 +8,7 @@
 import UIKit
 
 class SalatLearningNextVC: UIViewController {
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var loader: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     private var salatLearningList : [SalatLearningModel] = []
@@ -26,8 +27,9 @@ class SalatLearningNextVC: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+        collectionView.backgroundColor = .appWhite
         loader.color = .tintColor
+        btnBack.setImage(AppImage.back.uiImage, for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +47,10 @@ class SalatLearningNextVC: UIViewController {
                 #endif
             }
         }
+    }
+    
+    @IBAction func onBackPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }
 extension SalatLearningNextVC : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate{
