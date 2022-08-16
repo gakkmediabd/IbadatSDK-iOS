@@ -96,7 +96,7 @@ class DuaHadithDetailsVC: UIViewController {
 
     private func setDataWith(dua : DuaModel){
         self.subtitleLabel.textAlignment = .right
-        self.countLabel.text = "\(index + 1)"
+        self.countLabel.text = "\(index + 1)".banglaNumber
         self.titleLabel.text  =  dua.title
         self.subtitleLabel.text = dua.dua
         let details = "\(dua.pronounciation)<br><br>\(dua.meaning)<br><br>\(dua.fazilat)"
@@ -124,7 +124,7 @@ class DuaHadithDetailsVC: UIViewController {
     }
     private  func setDataWith(hadith : HadithModel){
         self.subtitleLabel.textAlignment = .left
-        self.countLabel.text = "\(index + 1)"
+        self.countLabel.text = "\(index + 1)".banglaNumber
         self.titleLabel.text = hadith.title
         self.subtitleLabel.text = hadith.source
         let details = "\(hadith.narrator)<br>\(hadith.hadithModelDescription)"

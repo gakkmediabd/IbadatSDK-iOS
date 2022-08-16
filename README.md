@@ -1,9 +1,9 @@
 # IbadatSDK-iOS
 
-[![CI Status](https://img.shields.io/travis/MD Azizur Rahman/IbadatSDK-iOS.svg?style=flat)](https://travis-ci.org/MD Azizur Rahman/IbadatSDK-iOS)
-[![Version](https://img.shields.io/cocoapods/v/IbadatSDK-iOS.svg?style=flat)](https://cocoapods.org/pods/IbadatSDK-iOS)
-[![License](https://img.shields.io/cocoapods/l/IbadatSDK-iOS.svg?style=flat)](https://cocoapods.org/pods/IbadatSDK-iOS)
-[![Platform](https://img.shields.io/cocoapods/p/IbadatSDK-iOS.svg?style=flat)](https://cocoapods.org/pods/IbadatSDK-iOS)
+[![CI Status](https://img.shields.io/travis/MD Azizur Rahman/Ibadat-GP-SDK.svg?style=flat)](https://travis-ci.org/MDAzizurRahman/Ibadat-GP-SDK)
+[![Version](https://img.shields.io/cocoapods/v/IbadatSDK-iOS.svg?style=flat)](https://cocoapods.org/pods/Ibadat-GP-SDK)
+[![License](https://img.shields.io/cocoapods/l/IbadatSDK-iOS.svg?style=flat)](https://cocoapods.org/pods/Ibadat-GP-SDK)
+[![Platform](https://img.shields.io/cocoapods/p/IbadatSDK-iOS.svg?style=flat)](https://cocoapods.org/pods/Ibadat-GP-SDK)
 
 ## Example
 
@@ -19,6 +19,85 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'Ibadat-GP-SDK'
 ```
+
+## Uses
+
+You can only present controller from here 
+
+Present Surah 
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .SURAH, presentController: self)
+```
+Present Dua
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .DUA, presentController: self)
+```
+Present  Hadis
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .HADITH, presentController: self)
+```
+Present SALAT  Learning 
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .SALAT, presentController: self)
+```
+Present WALLPAPER
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .WALLPAPER, presentController: self)
+```
+Present COMPASS
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .COMPASS, presentController: self)
+```
+Present Islamic Calendar 
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .CALENDAR, presentController: self)
+```
+Present Salat Times
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .SALAT_TIME, presentController: self)
+```
+Present Ifter and Sehri time
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .IFTER_SEHRI, presentController: self)
+```
+Present TASBIH 
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .TASBIH, presentController: self)
+```
+Present LIVE VIDEO 
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .LIVE_VIDEO, presentController: self)
+```
+Present  NEARIST MOSQUE
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .NEARIST_MOSQUE, presentController: self)
+```
+Present  ZAKAT
+
+```ruby
+IbadatSdkCore.shared.openFeature(by: .ZAKAT, presentController: self)
+```
+
+## Permissions 
+
+1. Location
+2. Photo Library 
+
+## Asset you need to added 
+
+1. Azan (30s)
 
 ## Author
 

@@ -33,22 +33,22 @@ internal class ListCell: UICollectionViewCell {
     }
 
     func surahSetup(indx : Int, surah : SurahModel){
-        self.countLabel.text = "\(indx)"
+        self.countLabel.text = "\(indx)".banglaNumber
         self.titleLabel.text = surah.surhaName
         self.subtitleLabel.text = surah.ayetCount
     }
     func duaSetup(indx : Int, obj : DuaModel){
         self.subtitleLabel.isHidden = true
-        self.countLabel.text = "\(indx)"
+        self.countLabel.text = "\(indx)".banglaNumber
         self.titleLabel.text = obj.title
     }
     func hadithSetup(indx : Int , obj : HadithModel){
-        self.countLabel.text = "\(indx)"
+        self.countLabel.text = "\(indx)".banglaNumber
         self.titleLabel.text = obj.title
         self.subtitleLabel.text = obj.source
     }
     func salatLearningSetup(indx : Int,salat : SalatLearningModel){
-        self.countLabel.text = "\(indx + 1)"
+        self.countLabel.text = "\(indx + 1)".banglaNumber
         self.titleLabel.text = salat.topicName
         self.subtitleLabel.isHidden = true
     }

@@ -236,7 +236,7 @@ extension SurahDetailsVC{
         let sura = surahList[index]
         self.titleLabel.text = sura.surhaName
         self.subtitleLabel.text = sura.ayetCount
-        self.countLabel.text = "\(index + 1)"
+        self.countLabel.text = "\(index + 1)".banglaNumber
         loader.startAnimating()
         ayatList.removeAll()
         collectionView.reloadData()
