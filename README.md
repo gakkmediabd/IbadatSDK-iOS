@@ -1,10 +1,9 @@
 # IbadatSDK-iOS
 
-[![CI Status](https://img.shields.io/travis/MD Azizur Rahman/Ibadat-GP-SDK.svg?style=flat)](https://travis-ci.org/MDAzizurRahman/Ibadat-GP-SDK)
-[![Version](https://img.shields.io/cocoapods/v/IbadatSDK-iOS.svg?style=flat)](https://cocoapods.org/pods/Ibadat-GP-SDK)
-[![License](https://img.shields.io/cocoapods/l/IbadatSDK-iOS.svg?style=flat)](https://cocoapods.org/pods/Ibadat-GP-SDK)
-[![Platform](https://img.shields.io/cocoapods/p/IbadatSDK-iOS.svg?style=flat)](https://cocoapods.org/pods/Ibadat-GP-SDK)
-
+[![CI Status](https://img.shields.io/travis/MD%20Azizur%20Rahman/Ibadat-GP-SDK.svg?style=flat)](https://travis-ci.org/MD%20Azizur%20Rahman/Ibadat-GP-SDK)
+[![Version](https://img.shields.io/cocoapods/v/IbadatSDK-iOS.svg?style=flat)](https://github.com/gakkmediabd/IbadatSDK-iOS/releases/)
+[![License](https://img.shields.io/cocoapods/l/IbadatSDK-iOS.svg?style=flat)](https://github.com/gakkmediabd/IbadatSDK-iOS/blob/main/LICENSE)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS%2011%2B%20%7C%20tvOS%2013%2B%20%7C%20macOS%2010.13%2B-blue.svg)](#)
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
