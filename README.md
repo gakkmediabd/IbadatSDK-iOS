@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/github/license/gakkmediabd/IbadatSDK-iOS)](https://github.com/gakkmediabd/IbadatSDK-iOS/blob/main/LICENSE)
 [![Platforms](https://img.shields.io/badge/Platforms-iOS%2010%2B-blue.svg)](#)
 [![Languages](https://img.shields.io/badge/language-%20swift-FF69B4.svg?style=plastic)](#)
+[![Code-Size](https://img.shields.io/github/languages/code-size/gakkmediabd/IbadatSDK-iOS)](#)
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -104,4 +105,4 @@ MD Azizur Rahman, azizur.gakk@gmail.com
 
 ## License
 
-IbadatSDK-iOS is available under the MIT license. See the LICENSE file for more info.s
+IbadatSDK-iOS is available under the MIT license. See the LICENSE file for more info
