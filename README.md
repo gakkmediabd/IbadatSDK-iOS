@@ -97,7 +97,8 @@ IbadatSdkCore.shared.openFeature(by: .ZAKAT, presentController: self)
 
 ## Asset you need to added 
 
-1. Azan (30s)
+[`1. Azan (30s)`](https://github.com/gakkmediabd/IbadatSDK-iOS/blob/main/Ibadat-GP/azan.mp3)
+
 
 ## Author
 
