@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840E67E728ACCA9F00A4E796 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E67E528ACCA9F00A4E796 /* PlayerVC.swift */; };
+		840E67E828ACCA9F00A4E796 /* PlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840E67E628ACCA9F00A4E796 /* PlayerVC.xib */; };
 		846B9AAF2896822D0061C7A3 /* URLSession++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B9AAE2896822D0061C7A3 /* URLSession++.swift */; };
 		846B9AB328968D2C0061C7A3 /* HadithModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B9AB228968D2C0061C7A3 /* HadithModel.swift */; };
 		846B9AB628968DBB0061C7A3 /* HadithVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B9AB428968DBB0061C7A3 /* HadithVC.swift */; };
@@ -126,7 +128,6 @@
 		849B731628A1089200298CCD /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B731428A1089200298CCD /* CalenderCell.swift */; };
 		849B731728A1089200298CCD /* CalenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B731528A1089200298CCD /* CalenderCell.xib */; };
 		849B731928A108D400298CCD /* FSCalendarLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B731828A108D400298CCD /* FSCalendarLocale.swift */; };
-		84A4B36928A4C53200B1136C /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84A4B36828A4C53200B1136C /* azan.mp3 */; };
 		84A4B36B28A4F74900B1136C /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84A4B36A28A4F74900B1136C /* azan.mp3 */; };
 		84BA079328966041004EF6DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84BA079528966041004EF6DA /* Localizable.strings */; };
 		84BA079828966088004EF6DA /* ConstantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA079728966088004EF6DA /* ConstantData.swift */; };
@@ -175,6 +176,9 @@
 		84E0D7A728A3B91C00AC45EA /* ZakatTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D7A528A3B91C00AC45EA /* ZakatTopCell.swift */; };
 		84E0D7A828A3B91C00AC45EA /* ZakatTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0D7A628A3B91C00AC45EA /* ZakatTopCell.xib */; };
 		84E0D7AE28A3CB0C00AC45EA /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D7AD28A3CB0C00AC45EA /* AlarmManager.swift */; };
+		84E2D45C28ACE874007B375C /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E2D45A28ACE874007B375C /* YTPlayerView.m */; };
+		84E2D45D28ACE874007B375C /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E2D45B28ACE874007B375C /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84E2D45F28ACE87F007B375C /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 84E2D45E28ACE87F007B375C /* YTPlayerView-iframe-player.html */; };
 		84EF0D3D2897952B00FC2433 /* SurhaDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0D3C2897952B00FC2433 /* SurhaDetailsModel.swift */; };
 		84EF0D412897966D00FC2433 /* SurahDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0D3F2897966D00FC2433 /* SurahDetailsVC.swift */; };
 		84EF0D422897966D00FC2433 /* SurahDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EF0D402897966D00FC2433 /* SurahDetailsVC.xib */; };
@@ -210,6 +214,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		840E67E528ACCA9F00A4E796 /* PlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
+		840E67E628ACCA9F00A4E796 /* PlayerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerVC.xib; sourceTree = "<group>"; };
 		846B9AAE2896822D0061C7A3 /* URLSession++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession++.swift"; sourceTree = "<group>"; };
 		846B9AB228968D2C0061C7A3 /* HadithModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithModel.swift; sourceTree = "<group>"; };
 		846B9AB428968DBB0061C7A3 /* HadithVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithVC.swift; sourceTree = "<group>"; };
@@ -329,7 +335,6 @@
 		849B731428A1089200298CCD /* CalenderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
 		849B731528A1089200298CCD /* CalenderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalenderCell.xib; sourceTree = "<group>"; };
 		849B731828A108D400298CCD /* FSCalendarLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendarLocale.swift; sourceTree = "<group>"; };
-		84A4B36828A4C53200B1136C /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
 		84A4B36A28A4F74900B1136C /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
 		84BA079428966041004EF6DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84BA079728966088004EF6DA /* ConstantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantData.swift; sourceTree = "<group>"; };
@@ -379,6 +384,9 @@
 		84E0D7A528A3B91C00AC45EA /* ZakatTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakatTopCell.swift; sourceTree = "<group>"; };
 		84E0D7A628A3B91C00AC45EA /* ZakatTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZakatTopCell.xib; sourceTree = "<group>"; };
 		84E0D7AD28A3CB0C00AC45EA /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+		84E2D45A28ACE874007B375C /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		84E2D45B28ACE874007B375C /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		84E2D45E28ACE87F007B375C /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		84EF0D3B2897870100FC2433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		84EF0D3C2897952B00FC2433 /* SurhaDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurhaDetailsModel.swift; sourceTree = "<group>"; };
 		84EF0D3F2897966D00FC2433 /* SurahDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahDetailsVC.swift; sourceTree = "<group>"; };
@@ -494,6 +502,8 @@
 				84919E13289F873A0003AEBD /* LiveVideoVC.xib */,
 				84919E19289F91350003AEBD /* LiveCell.swift */,
 				84919E1A289F91350003AEBD /* LiveCell.xib */,
+				840E67E528ACCA9F00A4E796 /* PlayerVC.swift */,
+				840E67E628ACCA9F00A4E796 /* PlayerVC.xib */,
 			);
 			name = LiveVideoVC;
 			sourceTree = "<group>";
@@ -800,6 +810,8 @@
 		84C562542892AA9700D0A8BF /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				84E2D45B28ACE874007B375C /* YTPlayerView.h */,
+				84E2D45A28ACE874007B375C /* YTPlayerView.m */,
 				84C562552892AAB500D0A8BF /* URLConstant.swift */,
 				848646E1289680060073AFE0 /* APIService.swift */,
 			);
@@ -850,7 +862,7 @@
 		84EF0D382897869500FC2433 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
-				84A4B36828A4C53200B1136C /* azan.mp3 */,
+				84E2D45E28ACE87F007B375C /* YTPlayerView-iframe-player.html */,
 				84BA07A6289666A1004EF6DA /* Assets.xcassets */,
 				848646D9289678680073AFE0 /* Colors.xcassets */,
 			);
@@ -912,6 +924,7 @@
 				849B72AE28A0FBCA00298CCD /* FSCalendar.h in Headers */,
 				84C562432892A43F00D0A8BF /* Ibadat_GP_SDK.h in Headers */,
 				849B72A428A0FBCA00298CCD /* FSCalendarCalculator.h in Headers */,
+				84E2D45D28ACE874007B375C /* YTPlayerView.h in Headers */,
 				849B72A728A0FBCA00298CCD /* FSCalendarAppearance.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1012,12 +1025,12 @@
 			files = (
 				84968D7E2899329500F914FA /* ifterSehriVC.xib in Resources */,
 				84E0D79D28A382CF00AC45EA /* NewCalculationHeaderCell.xib in Resources */,
+				84E2D45F28ACE87F007B375C /* YTPlayerView-iframe-player.html in Resources */,
 				848646DA289678680073AFE0 /* Colors.xcassets in Resources */,
 				84919E25289FBC550003AEBD /* MosqueListVC.xib in Resources */,
 				84919E1C289F91350003AEBD /* LiveCell.xib in Resources */,
 				84919E29289FBC650003AEBD /* MapViewVC.xib in Resources */,
 				84968D372898F12700F914FA /* HolidayCell.xib in Resources */,
-				84A4B36928A4C53200B1136C /* azan.mp3 in Resources */,
 				846E272A28A8D67D00B46F33 /* README.md in Resources */,
 				84E0D7A828A3B91C00AC45EA /* ZakatTopCell.xib in Resources */,
 				84968D312898DEFC00F914FA /* TasbihVC.xib in Resources */,
@@ -1035,6 +1048,7 @@
 				84BA07AD289674DC004EF6DA /* ListCell.xib in Resources */,
 				84BA079328966041004EF6DA /* Localizable.strings in Resources */,
 				849B69B0289BC00C00463349 /* TashbiContCell.xib in Resources */,
+				840E67E828ACCA9F00A4E796 /* PlayerVC.xib in Resources */,
 				84EF0D422897966D00FC2433 /* SurahDetailsVC.xib in Resources */,
 				84BA07A7289666A1004EF6DA /* Assets.xcassets in Resources */,
 				84EF0D4628979F0900FC2433 /* AyatCell.xib in Resources */,
@@ -1117,6 +1131,7 @@
 				84968D5C289904AA00F914FA /* SolarTime.swift in Sources */,
 				84EF0D4A2897C02000FC2433 /* SalatLearningVC.swift in Sources */,
 				84EF0D412897966D00FC2433 /* SurahDetailsVC.swift in Sources */,
+				840E67E728ACCA9F00A4E796 /* PlayerVC.swift in Sources */,
 				846B9AAF2896822D0061C7A3 /* URLSession++.swift in Sources */,
 				84919E0F289F87160003AEBD /* NearestMosqueVC.swift in Sources */,
 				849B72A328A0FBCA00298CCD /* FSCalendarDelegationFactory.m in Sources */,
@@ -1127,6 +1142,7 @@
 				84968D66289904AA00F914FA /* CalculationParameters.swift in Sources */,
 				84968D78289928FF00F914FA /* SalatCell.swift in Sources */,
 				84968D59289904AA00F914FA /* Qibla.swift in Sources */,
+				84E2D45C28ACE874007B375C /* YTPlayerView.m in Sources */,
 				846B9AB628968DBB0061C7A3 /* HadithVC.swift in Sources */,
 				84968D64289904AA00F914FA /* Madhab.swift in Sources */,
 				849B69B2289BE98800463349 /* String++.swift in Sources */,

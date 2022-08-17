@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
-    private var dataSource : [String] = ["Surah","Dua","Hadith","Salat Learning","Wallpaper","Compass","Calendar","Salat Time","Ifter Sehri","Tasbih","Live Video","Nearist Mosque","Zakat","Alarm Check"]
+    private var dataSource : [String] = ["Surah","Dua","Hadith","Salat Learning","Wallpaper","Compass","Calendar","Salat Time","Ifter Sehri","Tasbih","Live Video","Nearist Mosque","Zakat"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,11 +87,11 @@ extension ViewController : UITableViewDelegate{
         case 12:
             IbadatSdkCore.shared.openFeature(by: .ZAKAT, presentController: self)
             
-        case 13:
-
-            AlarmManager.shared.addAlarm(title: "Ibadat", subtitle: "Check", date: Date()) { isAdd in
-                print("Alarm set : \(isAdd)")
-            }
+//        case 13:
+//
+//            AlarmManager.shared.addAlarm(title: "Ibadat", subtitle: "Check", date: Date()) { isAdd in
+//                print("Alarm set : \(isAdd)")
+//            }
         default:
             break
         }

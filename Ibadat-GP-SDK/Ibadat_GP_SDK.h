@@ -16,3 +16,4 @@ FOUNDATION_EXPORT const unsigned char Ibadat_GP_SDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <Ibadat_GP_SDK/PublicHeader.h>
 
 #import <Ibadat_GP_SDK/FSCalendar.h>
+#import <Ibadat_GP_SDK/YTPlayerView.h>

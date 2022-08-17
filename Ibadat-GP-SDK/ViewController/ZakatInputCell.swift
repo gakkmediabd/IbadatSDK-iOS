@@ -28,5 +28,22 @@ class ZakatInputCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
+        
+        let toolbar = UIToolbar()
+        toolbar.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44)
+        let btnDone = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(donePressed))
+        if #available(iOS 14.0, *) {
+            let fixed = UIBarButtonItem(systemItem: .flexibleSpace)
+            toolbar.setItems([fixed,btnDone], animated: true)
+        } else {
+            // Fallback on earlier versions
+            toolbar.setItems([btnDone], animated: true)
+        }
+       
+        inputTextField.inputAccessoryView = toolbar
+    }
+    @objc
+    func donePressed(){
+        inputTextField.resignFirstResponder()
     }
 }

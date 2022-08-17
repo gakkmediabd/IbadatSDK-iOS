@@ -82,19 +82,10 @@ extension LiveVideoVC : UICollectionViewDataSource,UICollectionViewDelegateFlowL
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let obj = liveList[indexPath.row]
-        let str = "https://www.youtube.com/embed/\(obj.videoLink)?modestbranding=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=iframe_YTP_1525952728130&amp;origin=http://mygp.ibadat.co&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;playsinline=0&amp;html5=1&amp;widgetid=\(obj.videoLink)"
-        guard let url = URL(string: str) else {
-            return
-        }
-        let web = SFSafariViewController(url: url)
-        self.present(web, animated: true )
         
-//        let player = AVPlayer(url: url)
-//        let playerViewController = AVPlayerViewController()
-//        playerViewController.player = player
-//        self.present(playerViewController, animated: true) {
-//            playerViewController.player!.play()
-//        }
+        let playerVc = PlayerVC()
+        playerVc.videoId = obj.videoLink
+        self.navigationController?.pushViewController(playerVc, animated: true )
 
     }
 }

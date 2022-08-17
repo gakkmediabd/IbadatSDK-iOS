@@ -298,6 +298,7 @@ internal final class ConstantData : NSObject{
     
     //alert
     static let CANCEL = "বাতিল"
+    static let DONE = "সম্পন্ন"
     static let ALERT = "সতর্ক"
     static let SETTINGS = "সেটিংস এ যান"
     static let LOCATION_ALERT_MESSAGE = "সঠিক তথ্যের জন্য অনুগ্রহ করে অবস্থান পরিষেবা সক্ষম করুন৷"

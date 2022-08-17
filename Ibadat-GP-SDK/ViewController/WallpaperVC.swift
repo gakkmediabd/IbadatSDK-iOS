@@ -151,11 +151,11 @@ extension WallpaperVC : UICollectionViewDataSource,UICollectionViewDelegateFlowL
 
         @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
             if let error = error {
-                showAlert(title: ConstantData.DOWNLOAD_ERROR, message: error.localizedDescription, cancel: ConstantData.CANCEL) {
+                showAlert(title: ConstantData.DOWNLOAD_ERROR, message: error.localizedDescription, cancel: ConstantData.DONE) {
                     
                 }
             }else{
-                showAlert(title: ConstantData.DOWNLOAD_DONE, message: ConstantData.DOWNLOAD_DONE_MESSAGE, cancel: ConstantData.CANCEL) {
+                showAlert(title: ConstantData.DOWNLOAD_DONE, message: ConstantData.DOWNLOAD_DONE_MESSAGE, cancel: ConstantData.DONE) {
                     
                 }
             }

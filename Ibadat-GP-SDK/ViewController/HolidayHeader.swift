@@ -18,6 +18,8 @@ class HolidayHeader: UICollectionReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        layer.cornerRadius = 8
+        backgroundColor = .backgroundColor
         tittleLabel.textColor = .titleColot
         subtitleLabel.textColor = .subTitleColot
         

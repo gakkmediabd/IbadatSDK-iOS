@@ -38,6 +38,8 @@ class ZakatVC: UIViewController {
         
         loader.color = .tintColor
         btnBack.setImage(AppImage.back.uiImage, for: .normal)
+        
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {

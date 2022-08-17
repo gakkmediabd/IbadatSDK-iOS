@@ -41,6 +41,21 @@ class ZakatCalculationVC: UIViewController {
         self.populateZakatItems()
         self.configureTableView()
         btnBack.setImage(AppImage.back.uiImage, for: .normal)
+        
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardDidShowNotification, object: nil, queue: .main) { notification in
+            if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+                let keyboardHeight = keyboardFrame.cgRectValue.height
+                var inset = self.tableView.contentInset
+                inset.bottom  =  keyboardHeight - 50
+                self.tableView.contentInset = inset
+            }
+        }
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardDidHideNotification, object: nil, queue: .main) { notification in
+            var inset = self.tableView.contentInset
+            inset.bottom  =  0
+            self.tableView.contentInset = inset
+        }
+        
     }
     @IBAction func onBackPressed(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -59,6 +74,7 @@ extension ZakatCalculationVC : UITableViewDelegate, UITableViewDataSource{
         self.tableView.register(SectionHeaderCell.nib, forCellReuseIdentifier: SectionHeaderCell.identifier)
         self.tableView.register(ZakatInputCell.nib, forCellReuseIdentifier: ZakatInputCell.identifier)
         self.tableView.separatorStyle = .none
+        self.tableView.contentInset = .zero
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -143,31 +159,6 @@ extension ZakatCalculationVC : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerCell = tableView.dequeueReusableCell(withIdentifier: SectionHeaderCell.identifier) as! SectionHeaderCell
-//        headerCell.infoBtn.setClickListener {
-//            let _title = headerCell.titleLbl.text
-//            var description : String =
-//            switch section{
-//            case 1:
-//                description = "description_nogod_taka"
-//            case 2:
-//                description = "description_gold_amount"
-//            case 3:
-//                description = "description_investment"
-//            case 4:
-//                description = "description_asset"
-//            case 5:
-//                description = "description_business"
-//            case 6:
-//                description = "description_other"
-//            case 7:
-//                description = "description_farming"
-//            case 8:
-//                description = "description_nogod_taka"
-//                headerCell.titleLbl.textColor = .red
-//            default:
-//                description = "description_liability"
-//            }
-//        }
         
         switch section {
         case 1:
@@ -193,7 +184,32 @@ extension ZakatCalculationVC : UITableViewDelegate, UITableViewDataSource{
         
         return headerCell
     }
-
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        if section == 8{
+            let footer = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 50))
+            footer.backgroundColor = .appWhite
+            let btnDone = UIButton(frame:CGRect(x: 16, y: 5, width: tableView.bounds.width - 32, height: 40))
+            btnDone.layer.cornerRadius  = 8
+            btnDone.backgroundColor = .tintColor
+            btnDone.setTitle("ফলাফল", for: .normal)
+            btnDone.setTitleColor(.appWhite, for: .normal)
+            btnDone.addTarget(self, action: #selector(onZakatCalulationDone), for: .touchDown)
+            footer.addSubview(btnDone)
+            return footer
+        }
+        return nil
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == 8{
+            return 50
+        }
+        return 0
+    }
+    @objc
+    func onZakatCalulationDone(){
+        tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+    }
+    
     fileprivate func updateHeader() {
         let tAsset = self.totalAsset()
         let tLiabilities = self.totalLiabilities()
