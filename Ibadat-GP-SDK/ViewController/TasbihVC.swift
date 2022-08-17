@@ -33,7 +33,6 @@ class TasbihVC: UIViewController {
     @IBOutlet weak var maxCountLabel: UILabel!
     
     
-    
     private var tashbiList = ConstantData.getTasbi()
     private var tasbiCountList = ConstantData.getTasbiCount()
     

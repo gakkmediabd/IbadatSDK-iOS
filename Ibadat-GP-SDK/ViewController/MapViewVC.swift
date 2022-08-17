@@ -29,8 +29,8 @@ class MapViewVC: UIViewController {
         
         var region = MKCoordinateRegion()
         region.center  = AppData.shared.currentLocation.coordinate
-        region.span.latitudeDelta = 0.02
-        region.span.longitudeDelta = 0.02
+        region.span.latitudeDelta = 0.001
+        region.span.longitudeDelta = 0.001
         mapView.region = region
         
         let annotation = MKPointAnnotation()
@@ -64,7 +64,7 @@ extension MapViewVC{
 extension MapViewVC : MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
       guard let newLocation = userLocation.location else { return }
-      let region = MKCoordinateRegion(center: newLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+      let region = MKCoordinateRegion(center: newLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
       mapView.setRegion(region, animated: true)
     }
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

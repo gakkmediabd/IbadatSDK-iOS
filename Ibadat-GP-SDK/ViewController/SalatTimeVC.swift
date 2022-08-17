@@ -111,7 +111,7 @@ class SalatTimeVC: UIViewController {
         }
         
         if Date() > prayersTime.sunrise{
-            showAlert(message: "You cant set alarm on past")
+            showAlert(message: ConstantData.ALARM_WARNING)
             return
         }
         
@@ -188,7 +188,7 @@ extension SalatTimeVC : UICollectionViewDataSource,UICollectionViewDelegateFlowL
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let salat = salatTimeList[indexPath.row]
         if Date() > salat.time{
-            showAlert(message: "You cant set alarm on past")
+            showAlert(message: ConstantData.ALARM_WARNING)
             return
         }
         AlarmManager.shared.checkIsAlarmSet(identifier: salat.time.getString()) { isAdd in

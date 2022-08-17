@@ -10,6 +10,9 @@ import UIKit
 class MosqueListVC: UIViewController {
     @IBOutlet weak var btnBack: UIButton!
     
+    @IBOutlet weak var view10km: UIView!
+    @IBOutlet weak var view5km: UIView!
+    @IBOutlet weak var view1km: UIView!
     @IBOutlet weak var btn1km: UIButton!
     @IBOutlet weak var btn5km: UIButton!
     @IBOutlet weak var btn10km: UIButton!
@@ -75,6 +78,7 @@ class MosqueListVC: UIViewController {
         btn10km.setTitleColor(.tintColor, for: .normal)
         btn1km.isSelected = true
         btn1km.backgroundColor = .tintColor
+        btn1km.tintColor = .clear
         btn5km.backgroundColor = .buttonBackgroundColor
         btn10km.backgroundColor = .buttonBackgroundColor
         btnBack.setImage(AppImage.back.uiImage, for: .normal)
@@ -95,6 +99,7 @@ class MosqueListVC: UIViewController {
         btn10km.isSelected = false
         
         btn1km.backgroundColor = .tintColor
+        btn1km.tintColor = .clear
         btn5km.backgroundColor = .buttonBackgroundColor
         btn10km.backgroundColor = .buttonBackgroundColor
         
@@ -107,6 +112,7 @@ class MosqueListVC: UIViewController {
         btn10km.isSelected = false
         btn1km.backgroundColor = .buttonBackgroundColor
         btn5km.backgroundColor = .tintColor
+        btn5km.tintColor = .clear
         btn10km.backgroundColor = .buttonBackgroundColor
         loadMosque()
     }
@@ -118,6 +124,7 @@ class MosqueListVC: UIViewController {
         btn1km.backgroundColor = .buttonBackgroundColor
         btn5km.backgroundColor = .buttonBackgroundColor
         btn10km.backgroundColor = .tintColor
+        btn10km.tintColor = .clear
         loadMosque()
     }
     @objc func refreshData() {

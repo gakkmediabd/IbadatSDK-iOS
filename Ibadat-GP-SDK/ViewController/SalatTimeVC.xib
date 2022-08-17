@@ -58,7 +58,7 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="namaz_shikka_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ap0-qf-1q5">
                     <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                 </imageView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="WNr-Zq-5Yp">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="WNr-Zq-5Yp">
                     <rect key="frame" x="0.0" y="648" width="375" height="130"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -82,6 +82,7 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="hWG-8I-JyB"/>
                                     </constraints>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="chevron.backward"/>
                                     <connections>
@@ -100,6 +101,7 @@
                                         <constraint firstAttribute="height" constant="20" id="Aft-SF-0TJ"/>
                                         <constraint firstAttribute="width" constant="20" id="GPZ-vU-vvh"/>
                                     </constraints>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="chevron.forward"/>
                                     <connections>
@@ -121,10 +123,10 @@
                     </subviews>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Glf-Zf-pkr">
-                    <rect key="frame" x="0.0" y="146" width="375" height="460"/>
+                    <rect key="frame" x="0.0" y="162" width="375" height="444"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMi-UT-cXO" customClass="CircularProgressView" customModule="Ibadat_GP_SDK" customModuleProvider="target">
-                            <rect key="frame" x="77.666666666666686" y="120" width="220" height="220"/>
+                            <rect key="frame" x="77.666666666666686" y="112" width="220" height="220"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZ2-Zh-ZAx">
                                     <rect key="frame" x="24" y="24" width="172" height="172"/>
@@ -188,7 +190,7 @@
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1Yd-d9-Ivi">
-                    <rect key="frame" x="75" y="88" width="225" height="58"/>
+                    <rect key="frame" x="75" y="104" width="225" height="58"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dhaka, Bangladesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBq-4j-MTe">
                             <rect key="frame" x="0.0" y="0.0" width="225" height="30"/>
@@ -216,7 +218,7 @@
                 <constraint firstAttribute="bottom" secondItem="Ap0-qf-1q5" secondAttribute="bottom" id="EtM-uo-G5e"/>
                 <constraint firstItem="ja5-PZ-wBj" firstAttribute="top" secondItem="Glf-Zf-pkr" secondAttribute="bottom" id="FWz-q6-RU6"/>
                 <constraint firstItem="Ap0-qf-1q5" firstAttribute="top" secondItem="Dby-Nv-2EG" secondAttribute="bottom" id="JE1-gq-A20"/>
-                <constraint firstItem="1Yd-d9-Ivi" firstAttribute="top" secondItem="Dby-Nv-2EG" secondAttribute="bottom" id="LIC-fO-h1k"/>
+                <constraint firstItem="1Yd-d9-Ivi" firstAttribute="top" secondItem="Dby-Nv-2EG" secondAttribute="bottom" constant="16" id="LIC-fO-h1k"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ja5-PZ-wBj" secondAttribute="trailing" constant="16" id="ODG-c4-3eD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WNr-Zq-5Yp" secondAttribute="bottom" id="SgH-R5-wU4"/>
                 <constraint firstItem="Ap0-qf-1q5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dyu-4m-utk"/>

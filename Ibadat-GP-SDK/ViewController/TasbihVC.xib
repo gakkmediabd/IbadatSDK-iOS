@@ -177,7 +177,7 @@
                                         <constraint firstAttribute="trailing" secondItem="Smg-wE-OF0" secondAttribute="trailing" constant="24" id="vth-FF-Bue"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdH-K6-WsT">
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdH-K6-WsT">
                                     <rect key="frame" x="16" y="276" width="343" height="50"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pw5-Lg-PHN">

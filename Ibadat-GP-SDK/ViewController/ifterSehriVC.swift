@@ -155,7 +155,7 @@ class ifterSehriVC: UIViewController {
             return
         }
         if Date() > prayerTime.fajr{
-            showAlert(message: "You cant set alarm on past")
+            showAlert(message: ConstantData.ALARM_WARNING)
             return
         }
         AlarmManager.shared.checkIsAlarmSet(identifier: prayerTime.fajr.getString()) { isAdd in
@@ -177,7 +177,7 @@ class ifterSehriVC: UIViewController {
             return
         }
         if Date() > prayerTime.maghrib{
-            showAlert(message: "You cant set alarm on past")
+            showAlert(message: ConstantData.ALARM_WARNING)
             return
         }
         AlarmManager.shared.checkIsAlarmSet(identifier: prayerTime.maghrib.getString()) { isAdd in

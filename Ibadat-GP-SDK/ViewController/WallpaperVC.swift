@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Photos
 
 class WallpaperVC: UIViewController {
     
@@ -84,7 +85,68 @@ extension WallpaperVC : UICollectionViewDataSource,UICollectionViewDelegateFlowL
     
     func writeToPhotoAlbum(image: UIImage) {
         
-        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
+        if #available(iOS 14, *) {
+            let status = PHPhotoLibrary.authorizationStatus(for: .addOnly)
+            if status == .authorized{
+                UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
+            }else{
+                photoAccessRequest(image: image)
+            }
+        } else {
+            // Fallback on earlier versions
+            let status = PHPhotoLibrary.authorizationStatus()
+            if status == .authorized{
+                UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
+            }else{
+                self.photoAccessRequest(image: image)
+            }
+        }
+        
+    }
+    func photoAccessRequest(image : UIImage){
+        let title = Bundle.main.object(forInfoDictionaryKey: "NSPhotoLibraryUsageDescription") as? String
+        if #available(iOS 14, *) {
+            PHPhotoLibrary.requestAuthorization(for: .addOnly) { status in
+                DispatchQueue.main.async {
+                    if status == .authorized{
+                        self.writeToPhotoAlbum(image: image)
+                    }else{
+                        
+                        self.showAlert(title: ConstantData.ALERT, message:  title, done: ConstantData.SETTINGS, cancel: ConstantData.CANCEL) {
+                            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                                        return
+                            }
+                            if UIApplication.shared.canOpenURL(settingsUrl) {
+                                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                                    //print("Settings opened: \(success)") // Prints true
+                                })
+                            }
+                        }
+                    }
+                }
+                
+            }
+        } else {
+            // Fallback on earlier versions
+            PHPhotoLibrary.requestAuthorization { status in
+                DispatchQueue.main.async {
+                    if status == .authorized{
+                        self.writeToPhotoAlbum(image: image)
+                    }else{
+                        self.showAlert(title: ConstantData.ALERT, message: title, done: ConstantData.SETTINGS, cancel: ConstantData.CANCEL) {
+                            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                                        return
+                            }
+                            if UIApplication.shared.canOpenURL(settingsUrl) {
+                                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                                    //print("Settings opened: \(success)") // Prints true
+                                })
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
         @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
@@ -107,8 +169,14 @@ extension WallpaperVC{
     func downloadImage(from url: URL) {
         print("Download Started")
         getData(from: url) { data, response, error in
-            guard let data = data, error == nil,let img = UIImage(data: data) else { return }
             DispatchQueue.main.async {
+                if error != nil{
+                    self.showAlert(title: ConstantData.ALERT, message: error?.localizedDescription, cancel: ConstantData.CANCEL) {
+                        
+                    }
+                    return
+                }
+                guard let data = data,let img = UIImage(data: data) else { return }
                 self.writeToPhotoAlbum(image: img)
             }
         }

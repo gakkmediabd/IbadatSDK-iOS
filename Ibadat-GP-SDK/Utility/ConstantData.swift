@@ -394,4 +394,7 @@ internal final class ConstantData : NSObject{
     static let DOWNLOAD_DONE = "ডাউনলোড হয়েছে!"
     static let DOWNLOAD_DONE_MESSAGE = "আপনার ছবি আপনার ফটোতে সংরক্ষণ করা হয়েছে"
     
+    static let PHOTO_ACCESS_NEEDS = "ওয়ালপেপার সংরক্ষণের জন্য ফটো লাইব্রেরি অ্যাক্সেস প্রয়োজন"
+    
+    static let ALARM_WARNING = "আপনি আগের তারিখে অ্যালার্ম সেট করতে পারবেন না"
 }

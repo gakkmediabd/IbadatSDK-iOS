@@ -116,16 +116,19 @@
                                                     </constraints>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IVV-4p-FK6">
-                                                    <rect key="frame" x="64" y="0.0" width="318" height="45.5"/>
+                                                    <rect key="frame" x="64" y="0.0" width="318" height="46"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ঈমান (বিশ্বাস)" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzq-2N-Ldn">
-                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="19.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="qfO-dF-Flr"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(সহীহ বুখারী, অধ্যায়ঃ ৩, হাদিস নম্বরঃ ১২৯)।" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvF-s3-sIX">
-                                                            <rect key="frame" x="0.0" y="27.5" width="318" height="18"/>
+                                                            <rect key="frame" x="0.0" y="28" width="318" height="18"/>
                                                             <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>

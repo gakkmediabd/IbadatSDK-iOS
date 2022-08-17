@@ -18,10 +18,10 @@ class NearestMosqueVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let list = UITabBarItem(title: "Mosque", image: AppImage.mosque.uiImage, tag: 0)
+        let list = UITabBarItem(title: "মসজিদ", image: AppImage.mosque.uiImage, tag: 0)
         let listVC = MosqueListVC()
         listVC.tabBarItem = list
-        let map = UITabBarItem(title: "Map", image: AppImage.map.uiImage, tag: 1)
+        let map = UITabBarItem(title: "মানচিত্র", image: AppImage.map.uiImage, tag: 1)
         let mapVC = MapViewVC()
         mapVC.tabBarItem = map
         viewControllers = [listVC,mapVC]

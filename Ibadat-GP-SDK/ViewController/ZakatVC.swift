@@ -42,6 +42,9 @@ class ZakatVC: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if !zakatInfo.isEmpty {
+            return
+        }
         loader.startAnimating()
         APIService.instant.getZakat { result in
             self.loader.stopAnimating()
