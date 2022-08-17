@@ -33,7 +33,7 @@ internal class URLConstant{
     static  let ISLAMIC_HOLIDAY = "http://118.67.219.130:801/api/textcontent/bycategory/627c8495c44068285dde96c2/undefined/1/30"
     static let LIVE_VIDEO = "http://43.240.103.34/ebadattest/api/home?id=8801000000000&lang=bn&waqt=duhar"
     
-    static let API_KEY_MAP = "AIzaSyDZp4Om8x8i6UQDfyXMGERlt8pyNgddhFE"
+    static let API_KEY_MAP = ""
     static let NEAR_BY_PLACE = {(_ apiKey : String,_ radius : String,_ lat : String,_ long:String)->String in
         return "https://maps.googleapis.com/maps/api/place/nearbysearch/json?sensor=true&key=\(apiKey)&radius=\(radius)&location=\(lat),\(long)&type=mosque&language=bn"
     }
