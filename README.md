@@ -104,6 +104,10 @@ IbadatSdkCore.shared.openFeature(by: .ZAKAT, presentController: self)
 
 MD Azizur Rahman, azizur.gakk@gmail.com
 
+## Company
+
+[Gakk Media](https://gakkmedia.com)
+
 ## License
 
 IbadatSDK-iOS is available under the MIT license. See the LICENSE file for more info
