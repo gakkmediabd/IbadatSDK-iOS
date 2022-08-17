@@ -94,6 +94,7 @@ IbadatSdkCore.shared.openFeature(by: .ZAKAT, presentController: self)
 
 1. Location
 2. Photo Library 
+3. Contact [Gakk Media](https://gakkmedia.com) for map api key
 
 ## Asset you need to added in your main project
 
