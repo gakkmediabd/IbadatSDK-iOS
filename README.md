@@ -95,7 +95,7 @@ IbadatSdkCore.shared.openFeature(by: .ZAKAT, presentController: self)
 1. Location
 2. Photo Library 
 
-## Asset you need to added 
+## Asset you need to added in your main project
 
 [`1. Azan (30s)`](https://github.com/gakkmediabd/IbadatSDK-iOS/blob/main/Ibadat-GP/azan.mp3)
 
